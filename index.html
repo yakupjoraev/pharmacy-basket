@@ -1,1 +1,1106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="/bitrix/js/main/core/css/core.min.css?16190766533575" type="text/css" rel="stylesheet"/>
+    <link href="/bitrix/cache/css/s1/template_main/kernel_main/kernel_main_v1.css?16577879439980" type="text/css" rel="stylesheet"/>
+    <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?15942845211861" type="text/css" rel="stylesheet"/>
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?161907662023520" type="text/css" rel="stylesheet"/>
+    <link href="/bitrix/js/ui/fonts/ruble/ui.font.ruble.min.css?1619076684567" type="text/css" rel="stylesheet"/>
+    <link href="/bitrix/cache/css/s1/template_main/page_14b461861d78fd691ce9ba8d5b940fb6/page_14b461861d78fd691ce9ba8d5b940fb6_v1.css?165778794514981" type="text/css" rel="stylesheet"/>
+    <link href="/bitrix/cache/css/s1/template_main/template_25456ff9123ef99bdd65905b8717e7f3/template_25456ff9123ef99bdd65905b8717e7f3_v1.css?1657787943592635" type="text/css" data-template-style="true" rel="stylesheet"/>
+
+
+    <link rel="canonical" href="https://vn1.ru/personal/cart/"/>
+    <!-- Stylesheets -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+
+    <style>
+        @font-face {
+            font-display: swap;
+            font-family: 'FontAwesome';
+            src: url("/local/templates/.default/fonts/fontawesome-webfont.eot?v=4.7.0");
+            src: url("/local/templates/.default/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format('embedded-opentype'), url("/local/templates/.default/fonts/fontawesome-webfont.woff2?v=4.7.0") format('woff2'), url("/local/templates/.default/fonts/fontawesome-webfont.woff?v=4.7.0") format('woff'), url("/local/templates/.default/fonts/fontawesome-webfont.ttf?v=4.7.0") format('truetype'), url("/local/templates/.default/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: "Istok Web - Regular";
+            src: url("/local/templates/.default/fonts/Istok_Web/IstokWeb-Regular.ttf");
+            src: local('Istok Web - Regular'), local('Istok Web - Regular'), url("/local/templates/.default/fonts/Istok_Web/IstokWeb-Regular.ttf") format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: "Istok Web - Bold";
+            src: url("/local/templates/.default/fonts/Istok_Web/IstokWeb-Bold.ttf");
+            src: local('Istok Web - Bold'), local('Istok Web - Bold'), url("/local/templates/.default/fonts/Istok_Web/IstokWeb-Bold.ttf") format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'PT Sans', sans-serif;
+            src: url("/local/templates/.default/fonts/PT Sans.ttf") format('truetype');
+            font-weight: 400;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: 'PT Sans Pro-Narrow Extra Bold';
+            src: url(/local/templates/.default/fonts/PTSansPro-NarrowExtraBold.eot);
+            src: local('PT Sans Pro Narrow Extra Bold'), local('PTSansPro-NarrowExtraBold'), url(/local/templates/.default/fonts/PTSansPro-NarrowExtraBold.eot?#iefix) format('embedded-opentype'), url(/local/templates/.default/fonts/PTSansPro-NarrowExtraBold.woff2) format('woff2'), url(/local/templates/.default/fonts/PTSansPro-NarrowExtraBold.woff) format('woff'), url(/local/templates/.default/fonts/PTSansPro-NarrowExtraBold.ttf) format('truetype');
+            font-weight: 800;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: 'PT Sans Pro-Narrow Demi';
+            src: url(/local/templates/.default/fonts/PTSansPro-NarrowDemi.eot);
+            src: local('PT Sans Pro Narrow Demi'), local('PTSansPro-NarrowDemi'), url(/local/templates/.default/fonts/PTSansPro-NarrowDemi.eot?#iefix) format('embedded-opentype'), url(/local/templates/.default/fonts/PTSansPro-NarrowDemi.woff2) format('woff2'), url(/local/templates/.default/fonts/PTSansPro-NarrowDemi.woff) format('woff'), url(/local/templates/.default/fonts/PTSansPro-NarrowDemi.ttf) format('truetype');
+            font-weight: 400;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: 'PT Sans Pro-Narrow Bold';
+            src: url(/local/templates/.default/fonts/PTSansPro-NarrowBold.eot);
+            src: local('PT Sans Pro Narrow Bold'), local('PTSansPro-NarrowBold'), url(/local/templates/.default/fonts/PTSansPro-NarrowBold.eot?#iefix) format('embedded-opentype'), url(/local/templates/.default/fonts/PTSansPro-NarrowBold.woff2) format('woff2'), url(/local/templates/.default/fonts/PTSansPro-NarrowBold.woff) format('woff'), url(/local/templates/.default/fonts/PTSansPro-NarrowBold.ttf) format('truetype');
+            font-weight: 700;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: 'PT Sans Pro-Narrow Light';
+            src: url(/local/templates/.default/fonts/PTSansPro-NarrowLight.eot);
+            src: local('PT Sans Pro Narrow Light'), local('PTSansPro-NarrowLight'), url(/local/templates/.default/fonts/PTSansPro-NarrowLight.eot?#iefix) format('embedded-opentype'), url(/local/templates/.default/fonts/PTSansPro-NarrowLight.woff2) format('woff2'), url(/local/templates/.default/fonts/PTSansPro-NarrowLight.woff) format('woff'), url(/local/templates/.default/fonts/PTSansPro-NarrowLight.ttf) format('truetype');
+            font-weight: 300;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: 'PT Sans Pro-Regular';
+            src: url(/local/templates/.default/fonts/PTSansPro-Regular.eot);
+            src: local('PT Sans Pro'), local('PTSansPro-Regular'), url(/local/templates/.default/fonts/PTSansPro-Regular.eot?#iefix) format('embedded-opentype'), url(/local/templates/.default/fonts/PTSansPro-Regular.woff2) format('woff2'), url(/local/templates/.default/fonts/PTSansPro-Regular.woff) format('woff'), url(/local/templates/.default/fonts/PTSansPro-Regular.ttf) format('truetype');
+            font-weight: 400;
+            font-style: normal
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i&amp;display=swap&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" as="font" rel="stylesheet" crossorigin="anonymous"/>
+    <title>Аптека получения: Большая Семеновская, д. 20, с. 1</title>
+</head>
+<body>
+<a href="/personal/favorites-pharmacies/" data-favorites-map="count" title="Избранные аптеки" style="display: none;"><p class="dash">Избранные аптеки</p><sup>0</sup></a>
+<a href="javascript:void(0)" class="scroll-up js-scroll-up"><i class="fa fa-angle-double-up"></i></a>
+
+<div class="all_content">
+    <header class="desk">
+        <div class="top">
+            <div class="container">
+                <div id="bx_145159304_GSC_form_continer" class="ph_location">
+                    <div class="city_check">
+                        <div class="city"><p>Москва и Московская область</p><i class="fa fa-chevron"></i></div>
+                        <div class="city_list"><i class="close fa fa-times"></i>
+                            <div class="top">
+                                <div class="city"><p>Москва и Московская область</p><i class="fa fa-chevron"></i></div>
+                            </div>
+                            <div id="bx_145159304_GSC_result_continer" class="block">
+                                <ul>
+                                    <li><a href="javascript:void(0)" data-gsc-section="146">Москва и Московская область</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-element="49161"> - - Москва</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-element="49162"> - - Одинцово</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-element="49163"> - - Мытищи</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-element="49164"> - - Котельники</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-element="49165"> - - Химки</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-element="49959"> - - Видное</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-element="50421"> - - Истра</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-element="49166"> - - п. Развилка</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-element="49167"> - - Реутов</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-section="153">Санкт-Петербург и Ленинградская область</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-element="49168"> - - Санкт-Петербург</a></li>
+                                </ul>
+                            </div>
+                            <form class="searchcity">
+                                <div class="manual_input"><input class="search_city" type="search" onkeyup="obbx_145159304_GSC.inpKeyGeobase(event);" autocomplete="off" placeholder="Название города"/></div>
+                            </form>
+                        </div>
+                    </div>
+                    <p class="ph_name" data-lsc="btn"><img src="/local/templates/.default/img/map_point.svg" alt="check">Большая Семеновская, д. 20, с. 1</p>
+                    <div class="header_contact_data"><a class="ph_number" href="tel:84954191919">8 (495) 419 19 19</a><span class="ph_work_time">с 08:00 до 22:00 </span></div>
+                    <a class="ph_other reselect_pharma" href="javascript:void(0)" data-lsc="btn">выбрать другую</a></div>
+                <div class="lk"><a class="login" href="#loginPopup" data-fancybox>Войти</a></div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="container">
+                <a class="logo" href="/">
+                    <img src="/local/templates/.default/img/header-logo.svg" alt="Аптеки-риэлти" title="Аптеки-риэлти"/>
+                </a>
+                <ul class="site_nav">
+                    <li><a href="/aktsii/"><p class="dash">Акции</p></a></li>
+                    <li><a href="/our-pharmacy/"><p class="dash">Наши АПТЕКИ</p></a></li>
+                    <li>
+                        <a class="header_link uppercase" href="/personal/favorites/" data-favorites="count" title="Избранное"><span class="header_link-title">Избранное</span><i class="icon-user_favorites"><sup>0</sup></i></a></li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="menu"><a href="#"><span>каталог </span><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></a></div>
+                <div class="search_area">
+                    <form id="title-search" class="search" action="/catalog/">
+                        <input id="title-search-input" class="search-input-form-text" type="search" name="q" placeholder="Поиск препаратов" value="" autocomplete="off"/>
+                        <input class="search-input-hints" type="search" value=""/>
+                        <input class="find" name="s" type="submit" value="Найти" title="Найти"/>
+                    </form>
+
+                    <div class="offer">
+                        <span>Поиск по болезням, лекарствам, веществу:</span>
+                        <a class="suggest-copy-paste" href="javascript:void(0)">артра</a>
+                        <a class="suggest-copy-paste" href="javascript:void(0)">витамины</a>
+                    </div>
+                </div>
+                <div class="catalog">
+                    <div class="catalog_list">
+                        <ul class="green">
+                            <li><a href="/aktsii/" data-attr="aktsii">Акции</a></li>
+                            <li><a href="/catalog/bad/" data-attr="catalogbad">БАД</a></li>
+                            <li><a href="/catalog/bytovaya-khimiya/" data-attr="catalogbytovayakhimiya">Бытовая химия</a></li>
+                            <li><a href="/catalog/vitaminy/" data-attr="catalogvitaminy">Витамины</a></li>
+                            <li><a href="/catalog/gigiena-i-kosmetika/" data-attr="cataloggigienaikosmetika">Гигиена и косметика</a></li>
+                            <li><a href="/catalog/dieta-sport-pitanie/" data-attr="catalogdietasportpitanie">Диета, спорт, питание</a></li>
+                            <li><a href="/catalog/lekarstvennye-preparaty/" data-attr="cataloglekarstvennyepreparaty">Лекарственные препараты</a></li>
+                            <li><a href="/catalog/mama-i-malysh/" data-attr="catalogmamaimalysh">Мама и малыш</a></li>
+                            <li><a href="/catalog/meditsinskie-izdeliya/" data-attr="catalogmeditsinskieizdeliya">Медицинские изделия</a></li>
+                            <li><a href="/catalog/meditsinskie-pribory/" data-attr="catalogmeditsinskiepribory">Медицинские приборы</a></li>
+                            <li><a href="/catalog/optika/" data-attr="catalogoptika">Оптика</a></li>
+                            <li><a href="/catalog/ortopedicheskie-izdeliya1/" data-attr="catalogortopedicheskieizdeliya1">Ортопедические изделия</a></li>
+                            <li><a href="/catalog/prochie-tovary/" data-attr="catalogprochietovary">Прочие товары</a></li>
+                            <li><a href="/catalog/raznoe/" data-attr="catalograznoe">Разное</a></li>
+                            <li><a href="/catalog/sredstva-ot-nasekomykh/" data-attr="catalogsredstvaotnasekomykh">Средства от насекомых</a></li>
+                            <li><a href="/catalog/best-price/" data-attr="catalogbestprice">Лучшая цена</a></li>
+                            <li><a href="/catalog/nabory/" data-attr="catalognabory">Наборы</a></li>
+                        </ul>
+                        <ul class="box">
+                            <li class="list"><a href="/aktsii/">Акции</a></li>
+                            <li class="list " data-attr="catalogbad" data-tab-content="catalogbad">
+                                <ul>
+                                    <li><a href="/catalog/bad/balzamy/">Бальзамы</a></li>
+                                    <li><a href="/catalog/bad/vitaminnye-dobavki/">Витаминные добавки</a></li>
+                                    <li><a href="/catalog/bad/vitaminnye-dobavki-dlya-glaz/">Витаминные добавки для глаз</a></li>
+                                    <li><a href="/catalog/bad/vitaminnye-dobavki-dlya-zhenshchin/">Витаминные добавки для женщин</a></li>
+                                    <li><a href="/catalog/bad/vitaminnye-dobavki-dlya-muzhchin/">Витаминные добавки для мужчин</a></li>
+                                    <li><a href="/catalog/bad/gematogen-i-batonchiki/">Гематоген и батончики</a></li>
+                                    <li><a href="/catalog/bad/pivnye-drozhzhi/">Пивные дрожжи</a></li>
+                                    <li><a href="/catalog/bad/prochie-bad-dlya-vnutrennego-primeneniya/">прочие БАД для внутреннего применения</a></li>
+                                    <li><a href="/catalog/bad/rybiy-zhir-i-omega-3/">Рыбий жир и омега-3</a></li>
+                                    <li><a href="/catalog/bad/fitochay-chay/">Фиточай/чай</a></li>
+                                </ul>
+                            </li>
+                            <li class="list " data-attr="catalogbytovayakhimiya" data-tab-content="catalogbytovayakhimiya">
+                                <ul>
+                                    <li><a href="/catalog/bytovaya-khimiya/chistyashchie-sredstva/">Чистящие средства</a></li>
+                                </ul>
+                            </li>
+                            <li class="list " data-attr="catalogvitaminy" data-tab-content="catalogvitaminy">
+                                <ul>
+                                    <li><a href="/catalog/vitaminy/vitamin-s/">Витамин С</a></li>
+                                    <li><a href="/catalog/vitaminy/vitaminnye-kompleksy/">Витаминные комплексы</a></li>
+                                    <li><a href="/catalog/vitaminy/vitaminnye-preparaty/">Витаминные препараты</a></li>
+                                    <li><a href="/catalog/vitaminy/mineralnye-veshchestva/">Минеральные вещества</a></li>
+                                    <li><a href="/catalog/vitaminy/polivitaminnye-preparaty/">Поливитаминные препараты</a></li>
+                                </ul>
+                            </li>
+                            <li class="list " data-attr="cataloggigienaikosmetika" data-tab-content="cataloggigienaikosmetika">
+                                <ul>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/zhenskaya-gigiena/">Женская гигиена</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/masla-efirnye-kosmeticheskie/">Масла эфирные, косметические</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/massazh-i-rasslablenie/">Массаж и расслабление</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/muzhskaya-gigiena/">Мужская гигиена</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/mylo-i-sredstva-dlya-vanny-i-dusha/">Мыло и средства для ванны и душа</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/sredstva-gigieny/">Средства гигиены</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/sredstva-gigieny-i-kosmetiki/">Средства гигиены и косметики</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/sredstva-dlya-zashchity-ot-solntsa-i-dlya-zagara/">Средства для защиты от солнца и для загара</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/ukhod-za-volosami/">Уход за волосами</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/ukhod-za-gubami/">Уход за губами</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/ukhod-za-litsom/">Уход за лицом</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/ukhod-za-nogami/">Уход за ногами</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/ukhod-za-polostyu-rta/">Уход за полостью рта</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/ukhod-za-rukami-i-nogtyami/">Уход за руками и ногтями</a></li>
+                                    <li><a href="/catalog/gigiena-i-kosmetika/ukhod-za-telom/">Уход за телом</a></li>
+                                </ul>
+                            </li>
+                            <li class="list " data-attr="catalogdietasportpitanie" data-tab-content="catalogdietasportpitanie">
+                                <ul>
+                                    <li><a href="/catalog/dieta-sport-pitanie/vse-dlya-snizheniya-vesa/">Все для снижения веса</a></li>
+                                    <li><a href="/catalog/dieta-sport-pitanie/dieticheskie-produkty/">Диетические продукты</a></li>
+                                    <li><a href="/catalog/dieta-sport-pitanie/pishchevye-produkty/">Пищевые продукты</a></li>
+                                </ul>
+                            </li>
+                            <li class="list " data-attr="cataloglekarstvennyepreparaty" data-tab-content="cataloglekarstvennyepreparaty">
+                                <ul>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/antibakterialnye-preparaty/">Антибактериальные препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/antiseptiki-i-dezinfitsiruyushchie-sredstva/">Антисептики и дезинфицирующие средства</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/vrednye-privychki/">Вредные привычки</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/gomeopaticheskie-preparaty/">Гомеопатические препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/gormonalnye-preparaty/">Гормональные препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/dermatologicheskie-preparaty/">Дерматологические препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/dykhatelnaya-sistema/">Дыхательная система</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/immunodepressanty/">Иммунодепрессанты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/immunomoduliruyushchie-preparaty-i-immunodepressanty/">Иммуномодулирующие препараты и иммунодепрессанты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/kostno-myshechnaya-sistema/">Костно-мышечная система</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/krov-i-krovoobrashchenie/">Кровь и кровообращение</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/mochepolovaya-sistema/">Мочеполовая система</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/nervnaya-sistema/">Нервная система</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/obezbolivayushchie-preparaty/">Обезболивающие препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/organy-chuvstv-zrenie-slukh/">Органы чувств /зрение, слух/</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/pishchevaritelnaya-sistema/">Пищеварительная система</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/pishchevaritelnyy-trakt-i-obmen-veshchestv/">Пищеварительный тракт и обмен веществ</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/preparaty-dlya-lecheniya-gemorroya/">Препараты для лечения геморроя</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/preparaty-povyshayushchie-immunitet/">Препараты повышающие иммунитет</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/preparaty-pri-prostudnykh-zabolevaniyakh-i-grippe/">Препараты при простудных заболеваниях и гриппе</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/protivoallergicheskie-preparaty/">Противоаллергические препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/protivovirusnye-preparaty/">Противовирусные препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/protivovospalitelnye-preparaty/">Противовоспалительные препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/protivogribkovye-preparaty/">Противогрибковые препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/protivoopukholevye-preparaty/">Противоопухолевые препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/protivoparazitarnye-preparaty/">Противопаразитарные препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/rastvoriteli-dlya-lekarstvennykh-preparatov/">Растворители для лекарственных препаратов</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/rastvory-dlya-parenteralnogo-pitaniya/">Растворы для парентерального питания</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/rastitelnye-naturalnye-preparaty/">Растительные, натуральные препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/serdechno-sosudistye-preparaty/">Сердечно-сосудистые препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/stomatologicheskie-preparaty/">Стоматологические препараты</a></li>
+                                    <li><a href="/catalog/lekarstvennye-preparaty/toniziruyushchie-preparaty/">Тонизирующие препараты</a></li>
+                                </ul>
+                            </li>
+                            <li class="list " data-attr="catalogmamaimalysh" data-tab-content="catalogmamaimalysh">
+                                <ul>
+                                    <li><a href="/catalog/mama-i-malysh/beremennym-i-kormyashchim-mamam/">Беременным и кормящим мамам</a></li>
+                                    <li><a href="/catalog/mama-i-malysh/vse-dlya-kormleniya-detey/">Все для кормления детей</a></li>
+                                    <li><a href="/catalog/mama-i-malysh/detskaya-gigiena-i-ukhod/">Детская гигиена и уход</a></li>
+                                    <li><a href="/catalog/mama-i-malysh/detskoe-pitanie/">Детское питание</a></li>
+                                    <li><a href="/catalog/mama-i-malysh/podguzniki-i-pelenki/">Подгузники и пеленки</a></li>
+                                    <li><a href="/catalog/mama-i-malysh/pustyshki-prorezyvateli-i-igrushki/">Пустышки, прорезыватели и игрушки</a></li>
+                                </ul>
+                            </li>
+                            <li class="list " data-attr="catalogmeditsinskieizdeliya" data-tab-content="catalogmeditsinskieizdeliya">
+                                <ul>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/applikatory-kuznetsova/">Аппликаторы Кузнецова</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/aptechki/">Аптечки</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/berushi/">Беруши</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/gigiena-polosti-nosa/">Гигиена полости носа</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/izdeliya-iz-reziny/">Изделия из резины</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/lechebnaya-odezhda/">Лечебная одежда</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/ortopedicheskie-izdeliya/">Ортопедические изделия</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/perevyazochnye-materialy/">Перевязочные материалы</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/prezervativy-gel-smazki/">Презервативы, гель-смазки</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/rastvory-dlya-linz-i-glaz/">Растворы для линз и глаз</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/raskhodnye-izdeliya/">Расходные изделия</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/spirali-meditsinskie/">Спирали медицинские</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/testy-diagnosticheskie/">Тесты диагностические</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/ukhod-za-bolnymi/">Уход за больными</a></li>
+                                    <li><a href="/catalog/meditsinskie-izdeliya/shpritsy/">Шприцы</a></li>
+                                </ul>
+                            </li>
+                            <li class="list " data-attr="catalogmeditsinskiepribory" data-tab-content="catalogmeditsinskiepribory">
+                                <ul>
+                                    <li><a href="/catalog/meditsinskie-pribory/analizatory/">Анализаторы</a></li>
+                                    <li><a href="/catalog/meditsinskie-pribory/vesy/">Весы</a></li>
+                                    <li><a href="/catalog/meditsinskie-pribory/glyukometry/">Глюкометры</a></li>
+                                    <li><a href="/catalog/meditsinskie-pribory/ingalyatory-nebulayzery/">Ингаляторы /небулайзеры</a></li>
+                                    <li><a href="/catalog/meditsinskie-pribory/irrigatory/">Ирригаторы</a></li>
+                                    <li><a href="/catalog/meditsinskie-pribory/massazhery/">Массажеры</a></li>
+                                    <li><a href="/catalog/meditsinskie-pribory/molokootsosy/">Молокоотсосы</a></li>
+                                    <li><a href="/catalog/meditsinskie-pribory/obluchateli/">Облучатели</a></li>
+                                    <li><a href="/catalog/meditsinskie-pribory/raskhodnyy-material-lantsety-test-poloski-manzhety/">Расходный материал/ланцеты, тест-полоски, манжеты</a></li>
+                                    <li><a href="/catalog/meditsinskie-pribory/stetoskopy/">Стетоскопы</a></li>
+                                    <li><a href="/catalog/meditsinskie-pribory/termometry/">Термометры</a></li>
+                                    <li><a href="/catalog/meditsinskie-pribory/tonometry/">Тонометры</a></li>
+                                </ul>
+                            </li>
+                            <li class="list " data-attr="catalogoptika" data-tab-content="catalogoptika">
+                                <ul>
+                                    <li><a href="/catalog/optika/linzy/">Линзы</a></li>
+                                </ul>
+                            </li>
+                            <li class="list " data-attr="catalogortopedicheskieizdeliya1" data-tab-content="catalogortopedicheskieizdeliya1">
+                                <ul>
+                                    <li><a href="/catalog/ortopedicheskie-izdeliya1/bandazhi/">Бандажи</a></li>
+                                    <li><a href="/catalog/ortopedicheskie-izdeliya1/binty-elastichnye/">Бинты эластичные</a></li>
+                                    <li><a href="/catalog/ortopedicheskie-izdeliya1/kompressionnyy-trikotazh/">Компрессионный трикотаж</a></li>
+                                    <li><a href="/catalog/ortopedicheskie-izdeliya1/korsety-i-korrektory-osanki/">Корсеты и корректоры осанки</a></li>
+                                    <li><a href="/catalog/ortopedicheskie-izdeliya1/massazhery-i-kovriki/">Массажеры и коврики</a></li>
+                                    <li><a href="/catalog/ortopedicheskie-izdeliya1/ortezy/">Ортезы</a></li>
+                                    <li><a href="/catalog/ortopedicheskie-izdeliya1/sredstva-reabilitatsii/">Средства реабилитации</a></li>
+                                    <li><a href="/catalog/ortopedicheskie-izdeliya1/stelki-i-korrektory-stopy/">Стельки и корректоры стопы</a></li>
+                                </ul>
+                            </li>
+                            <li class="list " data-attr="catalogprochietovary" data-tab-content="catalogprochietovary">
+                                <ul>
+                                    <li><a href="/catalog/prochie-tovary/prochie-tovary/">Прочие товары</a></li>
+                                </ul>
+                            </li>
+                            <li class="list"><a href="/catalog/raznoe/">Разное</a></li>
+                            <li class="list " data-attr="catalogsredstvaotnasekomykh" data-tab-content="catalogsredstvaotnasekomykh">
+                                <ul>
+                                    <li><a href="/catalog/sredstva-ot-nasekomykh/zashchita-dlya-detey/">Защита для детей</a></li>
+                                    <li><a href="/catalog/sredstva-ot-nasekomykh/ot-kleshchey/">От клещей</a></li>
+                                    <li><a href="/catalog/sredstva-ot-nasekomykh/ot-letayushchikh-nasekomykh/">От летающих насекомых</a></li>
+                                    <li><a href="/catalog/sredstva-ot-nasekomykh/pedikulez/">Педикулез</a></li>
+                                </ul>
+                            </li>
+                            <li class="list"><a href="/catalog/best-price/">Лучшая цена</a></li>
+                            <li class="list"><a href="/catalog/nabory/">Наборы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="mobile">
+        <div class="container">
+            <div class="top">
+                <div class="burger_menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                <a class="logo" href="/"><img src="/local/templates/.default/img/header-logo.svg" alt="Аптеки-риэлти" title="Аптеки-риэлти"/></a>
+
+                <a class="ph_number" href="tel:8 (495) 419 19 19">8 (495) 419 19 19</a>
+                <div class="lk"><a class="login" href="#loginPopup" data-fancybox><p>Войти</p><i class="fa fa-sign-in"></i></a></div>
+            </div>
+
+            <div class="bottom">
+                <div class="search_area">
+                    <form id="title-search-mobile" class="search" action="/catalog/">
+                        <input id="title-search-input-mobile" class="search-input-form-text" type="search" name="q" placeholder="Поиск препаратов" value="" autocomplete="off"/>
+                        <input class="search-input-hints" type="search" value=""/>
+                        <input class="find" name="s" type="submit" value="Найти" title="Найти"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/" title="Главная страница"><i class="fa fa-home"></i>
+                    <meta itemprop="name" content="Главная страница"/>
+                    <meta itemprop="position" content="0"/>
+                </a></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/personal/" title="Персональные данные"><span itemprop="name">Персональные данные</span>
+                    <meta itemprop="position" content="1"/>
+                </a></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">Корзина</span>
+                    <meta itemprop="position" content="2"/>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="pege-title">
+        <div class="container">
+            <h1>Аптека получения: Большая Семеновская, д. 20, с. 1</h1>
+        </div>
+    </section>
+    <section class="cart_order your_cart">
+        <div class="container">
+            <div id="basket-root" class="bx-step-opacity" style="opacity: 0;">
+                <div class="alert alert-warning alert-dismissable" id="basket-warning" style="display: none;"><span class="close" data-entity="basket-items-warning-notification-close">&times;</span>
+                    <div data-entity="basket-general-warnings"></div>
+                    <div data-entity="basket-item-warnings">В вашей корзине <a href="javascript:void(0)" data-entity="basket-items-warning-count"></a> требует внимания.</div>
+                </div>
+                <div id="basket-items-list-wrapper">
+                    <div class="basket-items-list-header" data-entity="basket-items-list-header">
+                        <div class="basket-header-action_1"><label class="control">Выбрать все<input type="checkbox" name="delayAll" checked="checked"/>
+                            <div class="control__indicator"><i class="fa fa-check after" aria-hidden="true"></i></div>
+                        </label>
+                            <div class="shopping-cart_clear"><a href="?BasketClear=1" class="remove">Очистить корзину</a></div>
+                        </div>
+                        <div class="basket-header-action_2">
+                            <div class="basket-items-list-header-filter"><a href="javascript:void(0)" class="basket-items-list-header-filter-item active" data-entity="basket-items-count" data-filter="all" style="display: none;"></a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="similar" style="display: none;"></a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="warning" style="display: none;"></a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="delayed" style="display: none;"></a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="not-available" style="display: none;"></a></div>
+                        </div>
+                    </div>
+                    <div id="basket-items-list-container">
+                        <div class="basket-items-list-overlay" id="basket-items-list-overlay" style="display: none;"></div>
+                        <div id="basket-item-list">
+                            <div class="el">
+                                <table id="basket-item-table" class="content basket-item-table">
+                                    <tbody>
+                                    <tr id="basket-item-542501" class="product" data-entity="basket-item" data-id="542501">
+
+                                        <td class="product_photo-wrapper">
+                                            <label class="delayed-item control">
+                                                <input type="checkbox" name="delayed" value="Y" checked="checked" data-entity="basket-item-add-delayed">
+                                                <div class="control__indicator"><i class="fa fa-check after" aria-hidden="true"></i></div>
+                                            </label>
+                                            <a href="/catalog/lekarstvennye-preparaty/antiseptiki-i-dezinfitsiruyushchie-sredstva/miramistin-rastvor-d-mestn-primen-0-01-500ml-10002207/" class="product_photo background-resize">
+                                                <img src="https://aptstore.ru/upload/resize_cache/iblock/19d/160_160_1/miramistin-0-01-r-r-fl-500ml_preview_6929.jpg" alt="Мирамистин 0,01% р-р фл. 500мл" title="Мирамистин 0,01% р-р фл. 500мл">
+                                            </a>
+                                        </td>
+
+                                        <td class="product_info">
+                                            <p class="product_name">
+                                                <a class="page-link" href="/catalog/lekarstvennye-preparaty/antiseptiki-i-dezinfitsiruyushchie-sredstva/miramistin-rastvor-d-mestn-primen-0-01-500ml-10002207/">
+                                                    Мирамистин 0,01% р-р фл. 500мл
+                                                </a>
+                                            </p>
+                                            <div class="product-code">
+                                                <span>Годен до: </span>
+                                                <span data-entity="basket-item-property-value" data-property-code="VALID_DATE">01.08.2024</span>
+                                            </div>
+                                        </td>
+
+                                        <td class="prices-wrapper">
+                                            <div class="prices">
+                                                <div class="div">
+                                                    <p id="basket-item-price-542501" class="price">1&nbsp;149 ₽</p>
+                                                </div>
+                                                <div class="div">
+                                                    <div class="input-group plus-minus-input" data-entity="basket-item-quantity-block">
+                                                        <div class="input-group-button input-group-button-minus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-minus">
+                                                                <div class="minus"><p>-</p></div>
+                                                            </button>
+                                                        </div>
+                                                        <input class="input-group-field" type="text" value="1" data-value="1" data-entity="basket-item-quantity-field" id="basket-item-quantity-542501">
+                                                        <div class="input-group-button input-group-button-plus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-plus">
+                                                                <div class="plus"><p>+</p></div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="div">
+                                                    <div id="basket-item-sum-price-542501" class="summary">1&nbsp;149 ₽</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-amount">Доступно к заказу: 3 шт.</div>
+                                        </td>
+
+                                        <td class="remove">
+                                            <a class="remove_btn" href="javascript:void(0)" data-entity="basket-item-delete"><i class="fa fa-times"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="basket-item-493725" class="product" data-entity="basket-item" data-id="493725">
+                                        <td class="product_photo-wrapper">
+                                            <label class="delayed-item control">
+                                                <input type="checkbox" name="delayed" value="Y" checked="checked" data-entity="basket-item-add-delayed">
+                                                <div class="control__indicator"><i class="fa fa-check after" aria-hidden="true"></i></div>
+                                            </label>
+                                            <a href="/catalog/lekarstvennye-preparaty/krov-i-krovoobrashchenie/lioton-1000-gel-dlya-naruzhnogo-primeneniya-100g-27764/" class="product_photo background-resize">
+                                                <img src="https://aptstore.ru/upload/resize_cache/iblock/490/160_160_1/lioton-1000-gel-dlya-naruzhnogo-primeneniya-100g_preview_5901.jpg" alt="Лиотон 1000 гель для наружного применения 100г" title="Лиотон 1000 гель для наружного применения 100г">
+                                            </a>
+                                        </td>
+                                        <td class="product_info">
+                                            <p class="product_name">
+                                                <a class="page-link" href="/catalog/lekarstvennye-preparaty/krov-i-krovoobrashchenie/lioton-1000-gel-dlya-naruzhnogo-primeneniya-100g-27764/">
+                                                    Лиотон 1000 гель для наружного применения 100г
+                                                </a>
+                                            </p>
+                                            <div class="product-code">
+                                                <span>Годен до: </span>
+                                                <span data-entity="basket-item-property-value" data-property-code="VALID_DATE">01.05.2026</span>
+                                            </div>
+                                        </td>
+                                        <td class="prices-wrapper">
+                                            <div class="prices">
+                                                <div class="div">
+                                                    <p id="basket-item-price-493725" class="price">1&nbsp;211 ₽</p>
+                                                </div>
+                                                <div class="div">
+                                                    <div class="input-group plus-minus-input" data-entity="basket-item-quantity-block">
+                                                        <div class="input-group-button input-group-button-minus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-minus">
+                                                                <div class="minus"><p>-</p></div>
+                                                            </button>
+                                                        </div>
+                                                        <input class="input-group-field" type="text" value="1" data-value="1" data-entity="basket-item-quantity-field" id="basket-item-quantity-493725">
+                                                        <div class="input-group-button input-group-button-plus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-plus">
+                                                                <div class="plus"><p>+</p></div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="div">
+                                                    <div id="basket-item-sum-price-493725" class="summary">1&nbsp;211 ₽</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-amount">Доступно к заказу: 9 шт.</div>
+                                        </td>
+                                        <td class="remove">
+                                            <a class="remove_btn" href="javascript:void(0)" data-entity="basket-item-delete"><i class="fa fa-times"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="basket-item-501792" class="product" data-entity="basket-item" data-id="501792">
+                                        <td class="product_photo-wrapper">
+                                            <label class="delayed-item control">
+                                                <input type="checkbox" name="delayed" value="Y" checked="checked" data-entity="basket-item-add-delayed">
+                                                <div class="control__indicator"><i class="fa fa-check after" aria-hidden="true"></i></div>
+                                            </label>
+                                            <a href="/catalog/nabory/nabor-2-up-suprastineks-tabletki-ppo-5mg-14-suprastineks-kapli-5mg-ml-20ml/" class="product_photo background-resize">
+                                                <img src="https://aptstore.ru/upload/resize_cache/iblock/fb6/160_160_1/nabor-2-up-suprastineks-tabletki-ppo-5mg-14-suprastineks-kapli-5mg-ml-20ml_preview_48809.jpg" alt="Набор 2 уп. Супрастинекс таблетки ппо 5мг №14 + Супрастинекс капли 5мг/мл 20мл" title="Набор 2 уп. Супрастинекс таблетки ппо 5мг №14 + Супрастинекс капли 5мг/мл 20мл">
+                                            </a>
+                                        </td>
+                                        <td class="product_info">
+                                            <p class="product_name">
+                                                <a class="page-link" href="/catalog/nabory/nabor-2-up-suprastineks-tabletki-ppo-5mg-14-suprastineks-kapli-5mg-ml-20ml/">
+                                                    Набор 2 уп. Супрастинекс таблетки ппо 5мг №14 + Супрастинекс капли 5мг/мл 20мл
+                                                </a>
+                                            </p>
+                                            <div class="product_set-block" data-toggle="container">
+                                                <div class="product_set-toggle">
+                                                    <a href="javascript:void(0)" data-toggle="btn" data-toggle-showclass="product_set-items">Состав набора <span><i class="fa fa-chevron-down"></i></span></a>
+                                                </div>
+                                                <div class="product_set-items">
+                                                    <ol>
+                                                        <li>
+                                                            <div><span>Супрастинекс капли 5мг/мл 20мл</span><span>1 шт.</span>
+                                                                <div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div><span>Супрастинекс таблетки ппо 5мг №14</span><span>1 шт.</span>
+                                                                <div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="prices-wrapper">
+                                            <div class="prices">
+                                                <div class="div action">
+                                                    <p class="old-price">924 ₽</p>
+                                                    <p id="basket-item-price-501792" class="price">693 ₽</p>
+                                                </div>
+                                                <div class="div">
+                                                    <div class="input-group plus-minus-input" data-entity="basket-item-quantity-block">
+                                                        <div class="input-group-button input-group-button-minus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-minus">
+                                                                <div class="minus"><p>-</p></div>
+                                                            </button>
+                                                        </div>
+                                                        <input class="input-group-field" type="text" value="1" data-value="1" data-entity="basket-item-quantity-field" id="basket-item-quantity-501792">
+                                                        <div class="input-group-button input-group-button-plus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-plus">
+                                                                <div class="plus"><p>+</p></div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="div">
+                                                    <div id="basket-item-sum-price-501792" class="summary">693 ₽</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-amount">Доступно к заказу: 2 шт.</div>
+                                        </td>
+                                        <td class="remove">
+                                            <a class="remove_btn" href="javascript:void(0)" data-entity="basket-item-delete"><i class="fa fa-times"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="basket-item-501801" class="product" data-entity="basket-item" data-id="501801">
+                                        <td class="product_photo-wrapper">
+                                            <label class="delayed-item control">
+                                                <input type="checkbox" name="delayed" value="N" data-entity="basket-item-remove-delayed">
+                                                <div class="control__indicator"><i class="fa fa-check after" aria-hidden="true"></i></div>
+                                            </label>
+                                            <a href="/catalog/lekarstvennye-preparaty/protivoallergicheskie-preparaty/suprastineks-kapli-5mg-ml-20ml-35043/" class="product_photo background-resize">
+                                                <img src="https://aptstore.ru/upload/resize_cache/iblock/bb2/160_160_1/suprastineks-kapli-5mg-ml-20ml_preview_10258.jpg" alt="Супрастинекс капли 5мг/мл 20мл" title="Супрастинекс капли 5мг/мл 20мл">
+                                            </a>
+                                        </td>
+                                        <td class="product_info">
+                                            <p class="product_name">
+                                                <a class="page-link" href="/catalog/lekarstvennye-preparaty/protivoallergicheskie-preparaty/suprastineks-kapli-5mg-ml-20ml-35043/">
+                                                    Супрастинекс капли 5мг/мл 20мл
+                                                </a>
+                                            </p>
+                                            <div class="product-code">
+                                                <span>Годен до: </span>
+                                                <span data-entity="basket-item-property-value" data-property-code="VALID_DATE">30.11.2025</span>
+                                            </div>
+                                            <div class="basket-items-list-item-warning-container">
+                                                <div class="alert alert-warning text-center">
+                                                    Товар отложен.
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="prices-wrapper">
+                                            <div class="prices">
+                                                <div class="div">
+                                                    <p id="basket-item-price-501801" class="price">426 ₽</p>
+                                                </div>
+                                                <div class="div">
+                                                    <div class="input-group plus-minus-input" data-entity="basket-item-quantity-block">
+                                                        <div class="input-group-button input-group-button-minus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-minus">
+                                                                <div class="minus"><p>-</p></div>
+                                                            </button>
+                                                        </div>
+                                                        <input class="input-group-field" type="text" value="1" data-value="1" data-entity="basket-item-quantity-field" id="basket-item-quantity-501801">
+                                                        <div class="input-group-button input-group-button-plus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-plus">
+                                                                <div class="plus"><p>+</p></div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="div">
+                                                    <div id="basket-item-sum-price-501801" class="summary">426 ₽</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-amount">Доступно к заказу: 2 шт.</div>
+                                        </td>
+                                        <td class="remove">
+                                            <a class="remove_btn" href="javascript:void(0)" data-entity="basket-item-delete"><i class="fa fa-times"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="basket-item-501803" class="product" data-entity="basket-item" data-id="501803">
+                                        <td class="product_photo-wrapper">
+                                            <label class="delayed-item control">
+                                                <input type="checkbox" name="delayed" value="N" data-entity="basket-item-remove-delayed">
+                                                <div class="control__indicator"><i class="fa fa-check after" aria-hidden="true"></i></div>
+                                            </label>
+                                            <a href="/catalog/lekarstvennye-preparaty/protivoallergicheskie-preparaty/suprastineks-tabletki-ppo-5mg-14-34026/" class="product_photo background-resize">
+                                                <img src="https://aptstore.ru/upload/resize_cache/iblock/720/160_160_1/suprastineks-tabletki-ppo-5mg-14_preview_10259.png" alt="Супрастинекс таблетки ппо 5мг №14" title="Супрастинекс таблетки ппо 5мг №14">
+                                            </a>
+                                        </td>
+                                        <td class="product_info">
+                                            <p class="product_name">
+                                                <a class="page-link" href="/catalog/lekarstvennye-preparaty/protivoallergicheskie-preparaty/suprastineks-tabletki-ppo-5mg-14-34026/">
+                                                    Супрастинекс таблетки ппо 5мг №14
+                                                </a>
+                                            </p>
+                                            <div class="product-code">
+                                                <span>Годен до: </span>
+                                                <span data-entity="basket-item-property-value" data-property-code="VALID_DATE">01.09.2026</span>
+                                            </div>
+                                            <div class="basket-items-list-item-warning-container">
+                                                <div class="alert alert-warning text-center">
+                                                    Товар отложен.
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="prices-wrapper">
+                                            <div class="prices">
+                                                <div class="div">
+                                                    <p id="basket-item-price-501803" class="price">498 ₽</p>
+                                                </div>
+                                                <div class="div">
+                                                    <div class="input-group plus-minus-input" data-entity="basket-item-quantity-block">
+                                                        <div class="input-group-button input-group-button-minus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-minus">
+                                                                <div class="minus"><p>-</p></div>
+                                                            </button>
+                                                        </div>
+                                                        <input class="input-group-field" type="text" value="1" data-value="1" data-entity="basket-item-quantity-field" id="basket-item-quantity-501803">
+                                                        <div class="input-group-button input-group-button-plus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-plus">
+                                                                <div class="plus"><p>+</p></div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="div">
+                                                    <div id="basket-item-sum-price-501803" class="summary">498 ₽</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-amount">Доступно к заказу: 5 шт.</div>
+                                        </td>
+                                        <td class="remove">
+                                            <a class="remove_btn" href="javascript:void(0)" data-entity="basket-item-delete"><i class="fa fa-times"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="basket-item-513845" class="product" data-entity="basket-item" data-id="513845">
+                                        <td class="product_photo-wrapper">
+                                            <label class="delayed-item control">
+                                                <input type="checkbox" name="delayed" value="N" data-entity="basket-item-remove-delayed">
+                                                <div class="control__indicator"><i class="fa fa-check after" aria-hidden="true"></i></div>
+                                            </label>
+                                            <a href="/catalog/bad/vitaminnye-dobavki-dlya-zhenshchin/lignarius-kapsuly-30-68554/" class="product_photo background-resize">
+                                                <img src="https://aptstore.ru/upload/resize_cache/iblock/8c2/160_160_1/lignarius-kapsuly-30_preview_5748.jpg" alt="Лигнариус капсулы №30" title="Лигнариус капсулы №30">
+                                            </a>
+                                        </td>
+                                        <td class="product_info">
+                                            <p class="product_name">
+                                                <a class="page-link" href="/catalog/bad/vitaminnye-dobavki-dlya-zhenshchin/lignarius-kapsuly-30-68554/">
+                                                    Лигнариус капсулы №30
+                                                </a>
+                                            </p>
+                                            <div class="product-code">
+                                                <span>Годен до: </span>
+                                                <span data-entity="basket-item-property-value" data-property-code="VALID_DATE">01.11.2024</span>
+                                            </div>
+                                            <div class="basket-items-list-item-warning-container">
+                                                <div class="alert alert-warning text-center">
+                                                    Товар отложен.
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="prices-wrapper">
+                                            <div class="prices">
+                                                <div class="div">
+                                                    <p id="basket-item-price-513845" class="price">1&nbsp;720 ₽</p>
+                                                </div>
+                                                <div class="div">
+                                                    <div class="input-group plus-minus-input" data-entity="basket-item-quantity-block">
+                                                        <div class="input-group-button input-group-button-minus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-minus">
+                                                                <div class="minus"><p>-</p></div>
+                                                            </button>
+                                                        </div>
+                                                        <input class="input-group-field" type="text" value="1" data-value="1" data-entity="basket-item-quantity-field" id="basket-item-quantity-513845">
+                                                        <div class="input-group-button input-group-button-plus">
+                                                            <button class="button hollow circle" type="button" data-entity="basket-item-quantity-plus">
+                                                                <div class="plus"><p>+</p></div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="div">
+                                                    <div id="basket-item-sum-price-513845" class="summary">1&nbsp;720 ₽</div>
+                                                </div>
+                                            </div>
+                                            <div class="product-amount">Доступно к заказу: 4 шт.</div>
+                                        </td>
+                                        <td class="remove">
+                                            <a class="remove_btn" href="javascript:void(0)" data-entity="basket-item-delete"><i class="fa fa-times"></i></a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="bottom" data-entity="basket-total-block">
+                                    <div data-entity="basket-checkout-aligner">
+                                        <div class="basket-coupon clearfix">
+                                            <div class="basket-coupon-section">
+                                                <div class="basket-coupon-block-field">
+                                                    <div class="basket-coupon-block-field-description">Введите код купона для скидки:</div>
+                                                    <div class="form">
+                                                        <div class="form-group" style="position: relative;">
+                                                            <input type="text" class="form-control" id="" placeholder="" data-entity="basket-coupon-input">
+                                                            <span class="basket-coupon-block-coupon-btn"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="basket-coupon-alert-section">
+                                                <div class="basket-coupon-alert-inner">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pharmacy-total-bsaket pharmacy-total-sum-old">
+                                            <span>Цена без скидки: </span>
+                                            <span>4&nbsp;779 ₽</span>
+                                        </div>
+                                        <div class="pharmacy-total-bsaket pharmacy-total-sum-difference">
+                                            <span>Ваша экономия: </span>
+                                            <span>231 ₽</span>
+                                        </div>
+                                        <div class="pharmacy-total-bsaket pharmacy-total-sum">
+                                            <span>Сумма: </span>
+                                            <span data-entity="basket-total-price">1&nbsp;904 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="el" style="display: none;"><p class="title">ТОВАРЫ НЕ ДОСТУПНЫЕ ДЛЯ ЗАКАЗА, БУДУТ УДАЛЕНЫ СИСТЕМОЙ ИЗ КОРЗИНЫ</p>
+                                <table id="basket-item-table-delete" class="content basket-item-table"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gift-parent-container" data-entity="parent-container" data-showed="false" style="display: none; opacity: 0;"><p class="title">Выберите один из подарков</p>
+                <div class="slider_viewed_need slider_gift-js" data-entity="sale-products-gift-container"></div>
+            </div>
+            <div id="bx_2066034866_SOJ_form" class="order_confirm">
+                <div id="bx_2066034866_SOJ_continer_region" class="order-region" style="display: none;"><input type="hidden" name="PERSON_TYPE" value="1"></div>
+                <div id="bx_2066034866_SOJ_continer_delivery" class="order-delivery">
+                    <div class="delivery-container">
+                        <div data-delivery-container="3" class="delivery-item active">
+                            <div class="delivery-description">
+                                <style>
+
+                                </style>
+                                <div id="bx_1562768067_LSC_ORDER_continer" class="select_pharma ">
+                                    <div class="form delivery_pharmacy" data-lsc-container="map">
+                                        <div class="wrapper">
+                                            <div class="left_coll">
+                                                <div class="top">
+                                                    <ul>
+                                                        <li><label class="control">Круглосуточно<input id="bx_1562768067_LSC_ORDER_btn_work_always" type="checkbox">
+                                                            <div class="control__indicator"><i class="fa fa-check after"></i></div>
+                                                        </label></li>
+                                                        <li><label class="control">Работают сейчас<input id="bx_1562768067_LSC_ORDER_btn_work" type="checkbox">
+                                                            <div class="control__indicator"><i class="fa fa-check after"></i></div>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="pharmacy_container_title">Аптека получения:</div>
+                                                <div id="bx_1562768067_LSC_ORDER_continer_item" class="content">
+                                                    <div class="list mCustomScrollbar _mCS_16 mCS_no_scrollbar">
+                                                        <div id="mCSB_16" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;">
+                                                            <div id="mCSB_16_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                                                                <ul>
+                                                                    <li class="pharmacy_container">
+                                                                        <div class="radio"><input id="ph_item_57" name="STORE_ID" type="radio" class="today" value="57"><label for="ph_item_57" class="radio-label"></label></div>
+                                                                        <div class="pharma_info">
+                                                                            <div class="block one"><p class="ph_name">Большая Семеновская, д. 20, с. 1</p>
+                                                                                <div class="ph_info"><p class="shedule">Пн-Вс: 09:00-22:00;</p>
+                                                                                    <p class="route"><span class="metro">M</span>Электрозаводская<img src="/local/templates/.default/img/people_grey.svg" alt="people" class="mCS_img_loaded"><span class="value_time">1 мин.</span></p><a href="tel:8 (495) 419 19 19">8 (495) 419 19 19</a></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div id="mCSB_16_scrollbar_vertical" class="mCSB_scrollTools mCSB_16_scrollbar mCS-dark mCSB_scrollTools_vertical" style="display: none;">
+                                                                <div class="mCSB_draggerContainer">
+                                                                    <div id="mCSB_16_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;">
+                                                                        <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                                                    </div>
+                                                                    <div class="mCSB_draggerRail"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="bx_1562768067_LSC_ORDER_continer_btn_reset" class="bottom"><input class="btn_reset" type="submit" value="Изменить" title="Изменить"></div>
+                                            </div>
+                                            <div class="right_coll">
+                                                <div class="search top"><i class="fa fa-search"></i><i class="fa fa-close"></i><input id="bx_1562768067_LSC_ORDER__btn_search_input" type="search" placeholder="Метро или адрес"><input id="bx_1562768067_LSC_ORDER_btn_search" type="submit" value="" title="Найти"><input id="bx_1562768067_LSC_ORDER__btn_search_clear" type="reset" value="" title=""></div>
+                                                <div class="content maps">
+                                                    <div id="bx_1562768067_LSC_ORDER_continer_map" class="map" style="">
+                                                        <ymaps class="ymaps-2-1-79-map" style="width: 701px; height: 401px;">
+                                                            <ymaps class="ymaps-2-1-79-map ymaps-2-1-79-i-ua_js_yes ymaps-2-1-79-map-bg ymaps-2-1-79-islets_map-lang-ru" style="width: 701px; height: 401px;">
+                                                                <ymaps class="ymaps-2-1-79-inner-panes">
+                                                                    <ymaps class="ymaps-2-1-79-events-pane ymaps-2-1-79-user-selection-none" unselectable="on" style="height: 100%; width: 100%; top: 0px; left: 0px; position: absolute; z-index: 2500; cursor: url(&quot;https://api-maps.yandex.ru/2.1.79/build/release/images/cursor/grab.cur&quot;) 16 16, url(&quot;https://api-maps.yandex.ru/2.1.79/build/release/images/cursor/grab.cur&quot;), move;"></ymaps>
+                                                                    <ymaps class="ymaps-2-1-79-ground-pane" style="top: 0px; left: 0px; position: absolute; z-index: 501;">
+                                                                        <ymaps style="z-index: 150; position: absolute;">
+                                                                            <ymaps style="position: absolute; left: 0px; top: 0px;">
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317057&amp;y=164289&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 407px; top: -67px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317055&amp;y=164289&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: -105px; top: -67px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317056&amp;y=164289&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 151px; top: -67px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317058&amp;y=164291&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 663px; top: 445px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317058&amp;y=164290&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 663px; top: 189px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317055&amp;y=164291&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: -105px; top: 445px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317054&amp;y=164290&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: -361px; top: 189px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317056&amp;y=164290&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 151px; top: 189px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317056&amp;y=164291&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 151px; top: 445px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317058&amp;y=164289&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 663px; top: -67px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317054&amp;y=164291&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: -361px; top: 445px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317057&amp;y=164291&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 407px; top: 445px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317057&amp;y=164290&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 407px; top: 189px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317054&amp;y=164288&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: -361px; top: -323px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317055&amp;y=164290&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: -105px; top: 189px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317054&amp;y=164289&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: -361px; top: -67px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317055&amp;y=164288&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: -105px; top: -323px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317056&amp;y=164288&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 151px; top: -323px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317057&amp;y=164288&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 407px; top: -323px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                                <ymaps style="opacity: 1; position: absolute; background-size: 100% 100%; background-image: url(&quot;https://core-renderer-tiles.maps.yandex.net/tiles?l=map&amp;v=22.07.18-1-b220606200930&amp;x=317058&amp;y=164288&amp;z=19&amp;scale=2&amp;lang=ru_RU&amp;ads=enabled&quot;); width: 256px; height: 256px; left: 663px; top: -323px; background-repeat: no-repeat no-repeat;" unselectable="on" class="ymaps-2-1-79-user-selection-none"></ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                    </ymaps>
+                                                                    <ymaps class="ymaps-2-1-79-copyrights-pane" style="height: 0px; inset: auto 0px 0px; position: absolute; z-index: 5002;">
+                                                                        <ymaps>
+                                                                            <ymaps class="ymaps-2-1-79-copyright ymaps-2-1-79-copyright_logo_no" style="">
+                                                                                <ymaps class="ymaps-2-1-79-copyright__fog">…</ymaps>
+                                                                                <ymaps class="ymaps-2-1-79-copyright__wrap">
+                                                                                    <ymaps class="ymaps-2-1-79-copyright__layout">
+                                                                                        <ymaps class="ymaps-2-1-79-copyright__content-cell">
+                                                                                            <ymaps class="ymaps-2-1-79-copyright__content">
+                                                                                                <ymaps class="ymaps-2-1-79-copyright__text">© Яндекс</ymaps>
+                                                                                                <ymaps class="ymaps-2-1-79-copyright__agreement">&nbsp;<a class="ymaps-2-1-79-copyright__link" target="_blank" href="https://yandex.ru/legal/maps_termsofuse/?lang=ru" rel="noopener">Условия использования</a></ymaps>
+                                                                                            </ymaps>
+                                                                                        </ymaps>
+                                                                                        <ymaps class="ymaps-2-1-79-copyright__logo-cell"><a class="ymaps-2-1-79-copyright__logo" href="" target="_blank"></a></ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                        <ymaps class="ymaps-2-1-79-map-copyrights-promo">
+                                                                            <ymaps>
+                                                                                <ymaps class="ymaps-2-1-79-gotoymaps" title="Открыть в Яндекс.Картах">
+                                                                                    <ymaps class="ymaps-2-1-79-gotoymaps__container">
+                                                                                        <ymaps class="ymaps-2-1-79-gotoymaps__pin"></ymaps>
+                                                                                        <ymaps class="ymaps-2-1-79-gotoymaps__text-container">
+                                                                                            <ymaps class="ymaps-2-1-79-gotoymaps__text">Открыть в Яндекс.Картах</ymaps>
+                                                                                        </ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                                <ymaps class="ymaps-2-1-79-gototaxi" title="Доехать на такси" style="display: none;">
+                                                                                    <ymaps class="ymaps-2-1-79-gototaxi__container">
+                                                                                        <ymaps class="ymaps-2-1-79-gototaxi__pin"></ymaps>
+                                                                                        <ymaps class="ymaps-2-1-79-gototaxi__text-container">
+                                                                                            <ymaps class="ymaps-2-1-79-gototaxi__text"></ymaps>
+                                                                                        </ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                                <a class="ymaps-2-1-79-gototech" target="_blank" href="https://tech.yandex.ru/maps/mapsapi/?from=api-maps ">Создать свою карту</a></ymaps>
+                                                                        </ymaps>
+                                                                    </ymaps>
+                                                                    <ymaps class="ymaps-2-1-79-controls-pane" style="width: 100%; top: 0px; left: 0px; position: absolute; z-index: 4503;">
+                                                                        <ymaps class="ymaps-2-1-79-controls__toolbar" style="margin-top: 10px;">
+                                                                            <ymaps class="ymaps-2-1-79-controls__toolbar_left">
+                                                                                <ymaps style="margin-right: 0px; margin-left: 10px; position: inherit;" class="ymaps-2-1-79-controls__control_toolbar">
+                                                                                    <ymaps>
+                                                                                        <ymaps class="ymaps-2-1-79-searchbox">
+                                                                                            <ymaps id="id_16582111668035977382">
+                                                                                                <ymaps>
+                                                                                                    <ymaps class="ymaps-2-1-79-search ymaps-2-1-79-search_layout_normal ymaps-2-1-79-searchbox__normal-layout">
+                                                                                                        <ymaps id="id_16582111668035977383">
+                                                                                                            <ymaps>
+                                                                                                                <ymaps class="ymaps-2-1-79-searchbox__input-cell">
+                                                                                                                    <ymaps class="ymaps-2-1-79-searchbox-input"><input class="ymaps-2-1-79-searchbox-input__input" placeholder="Адрес или объект" autocomplete="off">
+                                                                                                                        <ymaps class="ymaps-2-1-79-searchbox-input__clear-button"></ymaps>
+                                                                                                                    </ymaps>
+                                                                                                                    <ymaps class="ymaps-2-1-79-searchbox-list-button"></ymaps>
+                                                                                                                </ymaps>
+                                                                                                                <ymaps class="ymaps-2-1-79-searchbox__button-cell">
+                                                                                                                    <ymaps class="ymaps-2-1-79-searchbox-button ymaps-2-1-79-_pin_right ymaps-2-1-79-user-selection-none" unselectable="on">
+                                                                                                                        <ymaps class="ymaps-2-1-79-searchbox-button-text">Найти</ymaps>
+                                                                                                                    </ymaps>
+                                                                                                                </ymaps>
+                                                                                                            </ymaps>
+                                                                                                        </ymaps>
+                                                                                                        <ymaps id="id_16582111668035977384">
+                                                                                                            <ymaps>
+                                                                                                                <ymaps class="ymaps-2-1-79-islets_serp-popup ymaps-2-1-79-islets__hidden">
+                                                                                                                    <ymaps class="ymaps-2-1-79-islets_serp-popup__tail"></ymaps>
+                                                                                                                    <ymaps class="ymaps-2-1-79-islets_serp" style="max-height: 301px;">
+                                                                                                                        <ymaps id="id_16582111668035977385">
+                                                                                                                            <ymaps></ymaps>
+                                                                                                                        </ymaps>
+                                                                                                                    </ymaps>
+                                                                                                                </ymaps>
+                                                                                                            </ymaps>
+                                                                                                        </ymaps>
+                                                                                                    </ymaps>
+                                                                                                </ymaps>
+                                                                                            </ymaps>
+                                                                                        </ymaps>
+                                                                                    </ymaps>
+                                                                                    <ymaps style="z-index: 40000; display: block; position: absolute; width: 252px; top: 29px; left: 10px;"></ymaps>
+                                                                                </ymaps>
+                                                                            </ymaps>
+                                                                            <ymaps class="ymaps-2-1-79-controls__toolbar_right"></ymaps>
+                                                                        </ymaps>
+                                                                        <ymaps class="ymaps-2-1-79-controls__bottom" style="top: 401px;"></ymaps>
+                                                                        <ymaps style="margin-right: 0px; margin-left: 0px; position: inherit; inset: 108px auto auto 10px;" class="ymaps-2-1-79-controls__control">
+                                                                            <ymaps>
+                                                                                <ymaps class="ymaps-2-1-79-zoom" style="height: 150px">
+                                                                                    <ymaps class="ymaps-2-1-79-zoom__plus ymaps-2-1-79-zoom__button ymaps-2-1-79-float-button ymaps-2-1-79-user-selection-none" unselectable="on">
+                                                                                        <ymaps class="ymaps-2-1-79-zoom__icon ymaps-2-1-79-float-button-icon"></ymaps>
+                                                                                    </ymaps>
+                                                                                    <ymaps class="ymaps-2-1-79-zoom__minus ymaps-2-1-79-zoom__button ymaps-2-1-79-float-button ymaps-2-1-79-user-selection-none" unselectable="on">
+                                                                                        <ymaps class="ymaps-2-1-79-zoom__icon ymaps-2-1-79-float-button-icon"></ymaps>
+                                                                                    </ymaps>
+                                                                                    <ymaps class="ymaps-2-1-79-zoom__scale">
+                                                                                        <ymaps class="ymaps-2-1-79-zoom__runner ymaps-2-1-79-zoom__button ymaps-2-1-79-float-button ymaps-2-1-79-zoom__runner__transition ymaps-2-1-79-touch-action-none ymaps-2-1-79-user-selection-none" unselectable="on" style="top: 13px;">
+                                                                                            <ymaps class="ymaps-2-1-79-zoom__icon ymaps-2-1-79-float-button-icon ymaps-2-1-79-float-button-icon_icon_runner"></ymaps>
+                                                                                        </ymaps>
+                                                                                    </ymaps>
+                                                                                </ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                    </ymaps>
+                                                                    <ymaps style="top: 0px; left: 0px; position: absolute; z-index: 2004;" class="ymaps-2-1-79-places-pane">
+                                                                        <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 241px; top: 171px;" unselectable="on">
+                                                                            <ymaps>
+                                                                                <ymaps class="ymaps-2-1-79-image " style="position: absolute; left: -13px; top: -48px; width: 30px; height: 39px; transform: translate3d(0px, 0px, 0px); opacity: 1; background-size: 30px 39px; background-image: url(&quot;https://vn1.ru/local/templates/.default/img/map_point.svg&quot;); background-position: 0px 0px;"></ymaps>
+                                                                            </ymaps>
+                                                                        </ymaps>
+                                                                    </ymaps>
+                                                                </ymaps>
+                                                            </ymaps>
+                                                        </ymaps>
+                                                    </div>
+                                                </div>
+                                                <div id="bx_1562768067_LSC_ORDER_continer_btn_reset_mobile" class="bottom"><input class="btn_reset" type="submit" value="Изменить" title="Изменить"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bx_2066034866_SOJ_continer_paysystem" class="order-paysystem" style="display: none;">
+                    <div class="radialContainer radialContainerBorder radialContainerHidden">
+                        <div class="radialContainer__item">
+                            <input id="ID_PAY_SYSTEM_ID_1" name="PAY_SYSTEM_ID" type="radio" class="radialCheckbox" value="1">
+                            <label for="ID_PAY_SYSTEM_ID_1" class="radio-label"></label>
+                            <span>Оплата в аптеке. Оплата производится наличными деньгами, в момент получения заказа. Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="bx_2066034866_SOJ_continer_info" class="order-info" style="display: none;"></div>
+                <div id="bx_2066034866_SOJ_continer_props" class="order-props content">
+                    <div class="block-right">
+                        <div id="bx_1904062484_SPUIcontiner_id" class="sp-order" style="position: relative;">
+                            <div class="sp-balance"><p>Статус:<strong>Новичок</strong></p>
+                                <p>Баланс карты:<strong>0 баллов</strong></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bx_2066034866_SOJ_continer_user_props" class="checkin_block" style="display: none;"></div>
+                <div id="bx_2066034866_SOJ_continer_total" class="btn_container">
+                    <div class="order-total">
+                        <div class="total-price total-price_summ"><span>Итого: </span><span>1&nbsp;904 ₽</span></div>
+                    </div>
+                    <div class="btn"><input data-save-button="true" type="submit" value="Подтвердить заказ"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-info">
+        </div>
+        <div class="container">
+            <div class="item">
+                <a class="footer_logo" href="/"><img src="/local/templates/.default/img/white-logo.svg" alt="Аптеки-риэлти" title="Аптеки-риэлти"/></a>
+                <p class="license">Лицензия на осуществление фармацевтической деятельности "ООО Аптека-Риэлти" ЛО-77-02- 011246 от 17.11.2020&nbsp;
+                    Лицензия на осуществление фармацевтической деятельности "ООО Эрджи Компани" ЛО-77-02- 011239 от 17.12.2020</p></div>
+            <div class="item">
+                <b>Сервисы</b>
+                <ul>
+                    <li><a href="/services/custom-agreement/">Пользовательское соглашение</a></li>
+                    <li><a href="/services/policy-processing-pd/">Политика по обработке ПД</a></li>
+                    <li><a href="/sitemap/">Карта сайта</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <b>О компании</b>
+                <ul>
+                    <li><a href="/about-company/about-us/">О нас</a></li>
+                    <li><a href="/about-company/contact-us/">Контактные данные</a></li>
+                    <li><a href="/about-company/licenses/">Лицензии</a></li>
+                    <li><a href="/about-company/karera/">Карьера</a></li>
+                    <li><a href="/services/bonus-card/">Бонусная карта</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <b>Информация</b>
+                <ul>
+                    <li><a href="/services/info-sales/">Информация об условиях розничной продажи лекарственных препаратов дистанционным способом</a></li>
+                </ul>
+                <div class="social_links_block">
+                    <a class="link" href="https://vk.com/aptekavashan1" target="_blank" title="Вконтакте"><i class="fa fa-vk"></i></a><a class="link" href="https://ok.ru/group/66397580689452" target="_blank" title="Однокласники"><i class="fa fa-ok fa-odnoklassniki"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <div class="preload"></div>
+</div>
+
+</body>
+</html>

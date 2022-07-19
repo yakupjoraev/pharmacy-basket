@@ -164,7 +164,7 @@ input:disabled:hover,textarea:disabled:hover{opacity:1 !important;}.preload{posi
 .input-group.plus-minus-input button div.minus:hover{color:#328a27}
 .input-group.plus-minus-input input{text-align:center;padding:0;margin:0;border:0;height:100%;z-index:0;}
 
-.control{position:relative;padding-left:28px;display:inline-block;font-family:'PT Sans Pro-Narrow Light';color:#a8a8a8;font-size:14px;font-weight:300}
+.control{position:relative;padding-left:28px;display:inline-block;font-family:'PT Sans Pro-Narrow Light';color:#707070;font-size:20px;line-height:23px;font-weight:300}
 .control a:hover{opacity:.75}
 .control:hover{color:#328a27}
 .control:hover .control__indicator{border:1px solid #328a27}
@@ -174,6 +174,7 @@ input:disabled:hover,textarea:disabled:hover{opacity:1 !important;}.preload{posi
 .control input{position:absolute;top:0;left:0;opacity:0;width:14px;height:14px;z-index:1}
 .control input:checked~.control__indicator .after{display:block}
 .control input:disabled:checked~.control__indicator .after{display:block;color:#e4e4e4;opacity:.75}
+.basket-header-action__right-text{font-family:'PT Sans Pro-Narrow Light';font-size:20px;line-height:23px;color:#707070;font-weight:300}
 .radio{font-family:'PT Sans Pro-Narrow Light';font-size:18px}
 .radio input[type=radio]{position:absolute;opacity:0;right:0;top:0;height:100%;width:100%}
 .radio input[type=radio]+.radio-label{height:100%;display:flex;align-items:center}
@@ -1378,18 +1379,18 @@ header.mobile .top .lk .fa{font-size:24px}
 .cart_order.your_cart .el .pharma_info .block .ph_name,.cart_order.your_order .el .pharma_info .block .ph_name{font-size:16px;font-weight:700;color:#000}
 .cart_order.your_cart .el .pharma_info .block .route,.cart_order.your_cart .el .pharma_info .block .shedule,.cart_order.your_order .el .pharma_info .block .route,.cart_order.your_order .el .pharma_info .block .shedule{text-align:center}
 .cart_order.your_cart .product .product_photo a{display:inline-block;width:130px;height:130px}
-.cart_order.your_cart .product-code{color:#707070;font-family:'PT Sans Pro - Narrow Light';font-size:16px;font-weight:300;line-height:28px;margin:14px 0}
+.cart_order.your_cart .product-code{color:#707070;font-family:'PT Sans Pro - Narrow Light';font-size:16px;font-weight:300;line-height:19px;margin:14px 0}
 .cart_order.your_cart .shopping-cart_clear {}
 .phone_number{text-align:center;margin:0 auto;display:block}
 .phone_number:hover{color:#328a27}
 .route img{margin:0 8px;width:10px;height:17px}
 .metro{width:20px;height:20px;border:1px solid #707070;background-color:#707070;border-radius:50%;color:transparent;position:relative;display:inline-block;margin-right:8px}
 .metro:before{content:'M';font-family:'PT Sans Pro-Narrow Light';font-size:10px;font-weight:700;position:absolute;top:50%;left:50%;color:#fff;margin:1px 0;transform:translate(-50%,-50%)}
-.product{display:grid;margin:0 16px 16px;padding:16px 0;border-bottom:1px dashed #e4e4e4;grid-template-rows:1fr;grid-template-columns:calc(10% + 8px) 1fr 1fr calc(10% + 8px);grid-column-gap:16px}
+.product{display:grid;margin:0 0 20px;padding:0 0 20px;border-bottom:1px solid #e4e4e4;grid-template-rows:1fr;grid-template-columns:calc(10% + 8px) 1fr 1fr calc(10% + 8px);grid-column-gap:15px}
 .product:last-child{border:none}
 .product .countPrices{width:100%}
 .product .product_info{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;width:100%}
-.product .product_name{font-family:'PT Sans Pro-Narrow Demi';font-size:20px;font-weight:300;line-height:22px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}
+.product .product_name{font-family:'PT Sans Pro-Narrow Bold';font-size:20px;font-weight:700;line-height:23px;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical}
 .product .product_breeder{color:#707070;font-family:'PT Sans Pro-Narrow Light';font-size:16px;font-weight:300;line-height:28px;margin:14px 0;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}
 .product .prices-wrapper{display:flex;align-items:center;justify-content:center;flex-wrap:wrap}
 .product .status{color:#707070;font-family:'PT Sans Pro-Narrow Light';font-size:18px;font-weight:300}
@@ -1414,10 +1415,10 @@ header.mobile .top .lk .fa{font-size:24px}
 .product .prices .div.action .price{color:#c10010}
 .product .prices .div.action .old-price{color:#707070;position:relative;margin-bottom:8px}
 .product .prices .div.action .old-price:before{content:"";height:1px;width:100%;position:absolute;top:50%;left:0;transform:translateY(-50%) rotate(-7deg);background-color:#328a27}
-.product .prices .price,.product .prices .summary{text-align:center;color:#000;font-family:'PT Sans Pro-Narrow Demi';font-size:24px;font-weight:300}
+.product .prices .price,.product .prices .summary{text-align:center;color:#000;font-family:'PT Sans Pro-Narrow Bold';font-size:26px;line-height:30px;font-weight:700}
 .product .remove{display:flex;align-items:center;justify-content:center}
-.product .remove .remove_btn{cursor:pointer;width:40px;height:40px;border-radius:50%;background-color:#c10010;display:flex;color:#fff;align-items:center;justify-content:center;font-size:20px;font-weight:400;letter-spacing:.4px}
-.product .remove .remove_btn:hover{opacity:.75}
+.product .remove .remove_btn{cursor:pointer;width:40px;height:40px;border-radius:50%;background-color:#D9D9D9;display:flex;color:#fff;align-items:center;justify-content:center;font-size:20px;font-weight:400;letter-spacing:.4px}
+.product .remove .remove_btn:hover{background-color:#C10010}
 .btn_container{display:flex;align-items:center;justify-content:flex-end;padding:32px 0}
 .btn_container input[type=button],.btn_container input[type=submit]{font-family:'PT Sans Pro-Narrow Light';font-size:25px;font-weight:300;height:60px!important}
 .btn_container .change{font-family:'PT Sans Pro-Narrow Light';font-size:25px;font-weight:300;position:relative;margin:0 32px}
@@ -1473,12 +1474,14 @@ header.mobile .top .lk .fa{font-size:24px}
 .order_confirm.email_exists .social_auth li a:hover{opacity:.75}
 .order_confirm.email_exists .social_auth p{display:block;text-align:center;color:#a8a8a8;font-family:'PT Sans Pro-Narrow Light';font-size:16px;margin:8px auto}
 @media (max-width:1023px){
-    .cart_order.your_cart,.cart_order.your_order{margin:24px 0}
+    .product .prices-wrapper{justify-content:flex-end;}
+    .product .prices .div:nth-child(1){display:none;}
+    .cart_order.your_cart,.cart_order.your_order{margin:0 0 24px 0}
     .cart_order.your_cart .el,.cart_order.your_order .el{margin-bottom:0}
     .cart_order.your_cart .el .title,.cart_order.your_order .el .title{margin:24px 0;font-size:28px}
     .cart_order.your_cart .el .pharma_info,.cart_order.your_order .el .pharma_info{padding:12px 16px}
-    .cart_order.your_cart .el .product .product_info,.cart_order.your_order .el .product .product_info{padding:0}
-    .cart_order.your_cart .el .product .prices,.cart_order.your_order .el .product .prices{display:grid;grid-template-columns:1fr;grid-template-rows:1fr 1fr 1fr}
+    .cart_order.your_cart .el .product .product_info,.cart_order.your_order .el .product .product_info{padding:0;width:115%;}
+    .cart_order.your_cart .el .product .prices,.cart_order.your_order .el .product .prices{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr;width:80%;}
     .cart_order.your_cart .el .content .bottom,.cart_order.your_order .el .content .bottom{display:grid;grid-template-columns:1fr 1fr;margin:0 16px 16px;padding:0 0 24px}
     .cart_order.your_cart .order_confirm,.cart_order.your_order .order_confirm{margin-top:24px}
     .cart_order.your_cart .order_confirm .title,.cart_order.your_order .order_confirm .title{font-size:24px;display:inline-block}
@@ -1489,13 +1492,22 @@ header.mobile .top .lk .fa{font-size:24px}
     .cart_order.your_cart .order_confirm .btn_container .summary_price .hint,.cart_order.your_order .order_confirm .btn_container .summary_price .hint{position:relative;bottom:0}
 }
 @media (max-width:767px){
+    .product .product_set-toggle a{font-size:16px;line-height:20px;}
+    .product .prices .div{width:max-content;}
+    .cart_order.your_cart .product-code{font-size:12px;line-height:16px;}
+    .product .product_name{font-size:16px;line-height:20px;}
+    .control{font-size:16px;line-height:20px;}
+    .basket-header-action__right-text{font-size:16px;line-height:20px;}
+    .product .prices-wrapper{grid-column:span 3;}
+    .cart_order.your_cart .el .product .prices,.cart_order.your_order .el .product .prices{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr;width:100%;justify-items:flex-end;}
+    .cart_order.your_cart .el .product .product_info,.cart_order.your_order .el .product .product_info{padding:0;width:100%;grid-column:span 2;}
     .cart_order.your_cart .el .pharma_info,.cart_order.your_order .el .pharma_info{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;grid-gap:16px;grid-row-gap:16px;grid-column-gap:16px}
     .cart_order.your_cart .el .block,.cart_order.your_order .el .block{font-size:16px}
-    .cart_order.your_cart .el .product,.cart_order.your_order .el .product{position:relative;display:grid;margin:0 8px 16px;grid-template-columns:1fr;grid-gap:16px;grid-row-gap:16px;grid-column-gap:16px}
+    .cart_order.your_cart .el .product,.cart_order.your_order .el .product{position:relative;display:grid;margin:0 8px 16px;grid-template-columns:1fr 1fr 1fr;grid-gap:16px;grid-row-gap:16px;grid-column-gap:16px}
     .cart_order.your_cart .el .product .product_photo,.cart_order.your_order .el .product .product_photo{width:50%;margin:0 auto}
     .cart_order.your_cart .el .product .prices,.cart_order.your_order .el .product .prices{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr}
-    .cart_order.your_cart .el .product .prices .price,.cart_order.your_cart .el .product .prices .summary,.cart_order.your_order .el .product .prices .price,.cart_order.your_order .el .product .prices .summary{font-size:1rem}
-    .cart_order.your_cart .el .product .remove,.cart_order.your_order .el .product .remove{position:absolute;top:16px;right:0}
+    .cart_order.your_cart .el .product .prices .price,.cart_order.your_cart .el .product .prices .summary,.cart_order.your_order .el .product .prices .price,.cart_order.your_order .el .product .prices .summary{font-size:24px;line-height:28px;}
+    .cart_order.your_cart .el .product .remove,.cart_order.your_order .el .product .remove{position:absolute;bottom:20px;right:0}
     .cart_order.your_cart .order_confirm .content .block input .hint,.cart_order.your_order .order_confirm .content .block input .hint{font-size:1rem}
 }
 @media (max-width:600px){
@@ -1510,6 +1522,9 @@ header.mobile .top .lk .fa{font-size:24px}
     .cart_order.your_cart .order_confirm .btn_container .btn,.cart_order.your_order .order_confirm .btn_container .btn{grid-gap:16px;grid-row-gap:16px;grid-column-gap:16px;font-size:18px;grid-template-columns:1fr}
 }
 @media (max-width:480px){
+    .cart_order.your_cart .el .product .product_photo,.cart_order.your_order .el .product .product_photo{min-width:60px;margin:0 auto}
+    .cart_order.your_cart .el .product .remove, .cart_order.your_order .el .product .remove{bottom: 25px;}
+    .product .remove .remove_btn{width:28px;height:28px;}
     .cart_order.your_cart .el .pharma_info,.cart_order.your_order .el .pharma_info{display:grid;padding:8px;grid-template-columns:1fr;grid-template-rows:1fr 1fr 1fr 1fr;grid-gap:8px;grid-row-gap:8px;grid-column-gap:8px}
 }
 .pagination_page{margin:40px 0 40px 0}

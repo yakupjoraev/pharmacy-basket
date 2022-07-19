@@ -6,8 +6,8 @@ var mapItems = [
         SCHEDULE: 'c 10 до 12',
         UF_METRO: 'Метро 1',
         UF_METRO_TIME: '5 минут от метро',
-        X: 'задай какой нибудь значение из яндекс карт',
-        Y: 'задай какой нибудь значение из яндекс карт',
+        X: 54.777923,
+        Y:  32.031777,
     },
     {
         id: '2',
@@ -16,13 +16,14 @@ var mapItems = [
         SCHEDULE: 'c 10 до 12',
         UF_METRO: 'Метро 2',
         UF_METRO_TIME: 'c 10 до 12',
-        X: 'задай какой нибудь значение из яндекс карт',
-        Y: 'задай какой нибудь значение из яндекс карт',
+        X: 54.778245,
+        Y: 32.042374,
     }
-]
+];
+var mapCollection,clusterIcons,clusterContent,myClusterer,getPointData,getPointOptions,geoObjects = [];
 ymaps.ready(function(){
     var map = new ymaps.Map('map', {//строка 'map' это id блока в котором будет заиничена карта
-        center: [/* тут координата х */,/* тут координата у */,], //Задаем центр карты
+        center: [54.782635, 32.045283], //Задаем центр карты
         zoom: 10,
         controls: ['zoomControl']
     });
@@ -38,10 +39,10 @@ ymaps.ready(function(){
     }];
 
     //Кластеризатор (Оболочка контейнера метки)
-    var clusterContent = ymaps.templateLayoutFactory.createClass('<div class="buildings-map_marker">{{ properties.geoObjects.length }}</div>');
+    clusterContent = ymaps.templateLayoutFactory.createClass('<div class="buildings-map_marker">{{ properties.geoObjects.length }}</div>');
 
     //Кластеризатор (создание)
-    var myClusterer = new ymaps.Clusterer({
+    myClusterer = new ymaps.Clusterer({
         preset: 'islands#invertedVioletClusterIcons',
         zoomMargin: [30],
         geoObjectHideIconOnBalloonOpen: false,

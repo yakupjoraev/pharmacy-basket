@@ -896,7 +896,7 @@ header.mobile .top .lk .fa{font-size:24px}
 .product_detail_info .top .block .slider_product_preview-nav .prev:hover,.product_detail_info .top .block .slider_product_preview-nav .next:hover{border:1px solid #328a27;color:#328a27;}
 .product_detail_info .top .block .slider_product_preview-nav .prev{left:0;transform:translateY(-50%) rotate(90deg);}
 .product_detail_info .top .block .slider_product_preview-nav .next{right:0;transform:translateY(-50%) rotate(-90deg);}
-
+.form-group{max-width: 620px;margin: 0 auto;}
 .product_detail_info .top .block .el-prop{margin:10px 0 16px}
 .product_detail_info .top .block .el-prop span{display:inline-block;color:#707070;margin:0 0 0 8px}
 .product_detail_info .top .block .el-prop a{display:inline-block;color:#328a27;margin:0 0 0 8px}
@@ -1350,14 +1350,39 @@ header.mobile .top .lk .fa{font-size:24px}
 .cart_order.your_cart .DeliveryTime{color:#328a27;display:block;position:relative;font-family:"PT Sans Pro-Narrow Extra Bold";text-transform:uppercase;font-size:36px;letter-spacing:.72px;border:2px solid #328a27;width:100%;margin:1rem 0;padding:1rem 0;text-align:center}
 .cart_order.your_cart .el .content,.cart_order.your_order .el .content{display:block;width:100%;border:1px solid #e4e4e4}
 .cart_order.your_cart .el .bottom{text-align:right;padding:24px;border:1px solid #e4e4e4}
-.cart_order.your_cart .el .bottom .form-control{background-color:#fff;border-color:#328a27}
-.cart_order.your_cart .el .bottom .basket-coupon-block-coupon-btn{border-right:2px solid #328a27;border-bottom:2px solid #328a27}
-.cart_order.your_cart .el .bottom .pharmacy-total-sum{color:#000;font-family:'PT Sans Pro-Narrow Extra Bold';font-size:30px;font-weight:300;letter-spacing:.6px;}
+.cart_order.your_cart .el .bottom .form-control{height:69px;background-color:#fff;border: 1px solid #E4E4E4;border-radius: 36px;padding-right: 60px;padding-left: 40px;font-size: 16px;line-height: 19px;}
+.cart_order.your_cart .el .bottom .form-control:hover{border-color:#000000}
+.cart_order.your_cart .el .bottom .form-control:active{border-color:#328A27;box-shadow: none;}
+.cart_order.your_cart .el .bottom .form-control:focus{border-color:#328A27;box-shadow: none;}
+.cart_order.your_cart .el .bottom .basket-coupon-block-coupon-btn{position: absolute;right: 39px;top: 50%;width: 20px;
+  height: 20px;background-image: url('../img/uil_enter.svg');border:none;transform: rotate(0deg);}
+  .cart_order.your_cart .el .bottom .form-control:active ~ .basket-coupon-block-coupon-btn{background-image: url('../img/active-enter-to-form.svg');background-repeat:no-repeat;}
+  .cart_order.your_cart .el .bottom .form-control:focus ~ .basket-coupon-block-coupon-btn{background-image: url('../img/active-enter-to-form.svg');background-repeat:no-repeat;}
+.pharmacy-total-sum{color:#000;font-family:'PT Sans Pro-Narrow Extra Bold';font-size:30px;font-weight:300;letter-spacing:.6px;}
 .cart_order.your_cart .el .bottom .price{font-family:'PT Sans Pro-Narrow Extra Bold';color:#000;font-size:26px;font-weight:700}
-.pharmacy-total-bsaket {display: flex;flex-direction: row;align-content: center;align-items: center;justify-content: flex-end;margin: 10px 0px 10px 0px;}
-.pharmacy-total-bsaket span:last-child {width: 150px;}
+.pharmacy-total-bsaket {display: flex;flex-direction: row;align-content: center;align-items: center;justify-content: center;margin: 15px 0px 15px 0px;}
+.pharmacy-total-bsaket span:last-child {width: 115px;text-align: center;}
+.form-group {position: relative;}
+.form-label{position: absolute;left: 40px;z-index: 2;font-family: 'PT Sans Pro-Narrow Light';font-weight: 300;font-size: 16px;line-height: 19px;color: #707070;pointer-events: none;transform: translateY(-3rem);transition: 150ms cubic-bezier(0.4,0,0.2,1);}
+.form-control__input:focus, .form-control__input:valid {height: 72px !important;padding-top: 20px;transition: 150ms cubic-bezier(0.4,0,0.2,1);}
+.form-control__input:focus ~ label, .form-control__input:valid ~ .form-label {transform: translateY(-3.5rem);color: #328A27;}
+.form-group-input{height: 72px;}
+.pharmacy-total-result{font-family: 'PT Sans Pro-Narrow Bold';font-weight:700;font-size: 30px;line-height: 35px;text-align: center;color: #C10010;}
+.pharmacy-total-coupon .pharmacy-total-sum{font-size: 26px;line-height: 30px;text-align: center;color: #707070;}
+.pharmacy-total-coupon .pharmacy-total-sum::before{content: '';position: absolute;top: 50%;left: -10px;right: -2px;height: 2px;width:15%;margin:0 auto;background: #707070;}
+.order_confirm .btn_container.pharmacy-total-coupon{margin-top: 0;}
+.order_confirm .btn_container .pharmacy-total-coupon__btn{border-radius: 27px;}
 
 @media (max-width:767px){
+    .pharmacy-total-result{font-size: 28px;line-height: 32px;}
+    .pharmacy-total-coupon .pharmacy-total-sum{font-size: 24px;line-height: 24px;}
+    .pharmacy-total-sum{font-size: 24px;line-height: 24px;}
+    .form-label{transform: translateY(-2rem);}
+    .form-control__input:focus, .form-control__input:valid {height: 66px !important;padding-top: 15px;transition: 150ms cubic-bezier(0.4,0,0.2,1);}
+    .form-control__input:focus ~ .form-label, .form-control__input:valid ~ .form-label {transform: translateY(-3,5rem);color: #328A27;}
+    .form-group-input{height: 66px;}
+    .cart_order.your_cart .el .bottom .form-control{height:44px;}
+    .cart_order.your_cart .el .bottom .basket-coupon-block-coupon-btn{right: 24px;}
     .cart_order.your_cart .el .bottom{padding:0 .5rem 1.5rem}
     .cart_order.your_cart .bottom .order_price strong,.cart_order.your_cart .el .order_number strong,.cart_order.your_order .bottom .order_number strong,.cart_order.your_order .bottom .order_price strong{font-size:1.75rem;white-space:pre}
 }
@@ -1379,7 +1404,7 @@ header.mobile .top .lk .fa{font-size:24px}
 .cart_order.your_cart .el .pharma_info .block .ph_name,.cart_order.your_order .el .pharma_info .block .ph_name{font-size:16px;font-weight:700;color:#000}
 .cart_order.your_cart .el .pharma_info .block .route,.cart_order.your_cart .el .pharma_info .block .shedule,.cart_order.your_order .el .pharma_info .block .route,.cart_order.your_order .el .pharma_info .block .shedule{text-align:center}
 .cart_order.your_cart .product .product_photo a{display:inline-block;width:130px;height:130px}
-.cart_order.your_cart .product-code{color:#707070;font-family:'PT Sans Pro - Narrow Light';font-size:16px;font-weight:300;line-height:19px;margin:14px 0}
+.cart_order.your_cart .product-code{color:#707070;font-size:16px;font-weight:300;line-height:19px;margin:14px 0}
 .cart_order.your_cart .shopping-cart_clear {}
 .phone_number{text-align:center;margin:0 auto;display:block}
 .phone_number:hover{color:#328a27}
@@ -1419,8 +1444,8 @@ header.mobile .top .lk .fa{font-size:24px}
 .product .remove{display:flex;align-items:center;justify-content:center}
 .product .remove .remove_btn{cursor:pointer;width:40px;height:40px;border-radius:50%;background-color:#D9D9D9;display:flex;color:#fff;align-items:center;justify-content:center;font-size:20px;font-weight:400;letter-spacing:.4px}
 .product .remove .remove_btn:hover{background-color:#C10010}
-.btn_container{display:flex;align-items:center;justify-content:flex-end;padding:32px 0}
-.btn_container input[type=button],.btn_container input[type=submit]{font-family:'PT Sans Pro-Narrow Light';font-size:25px;font-weight:300;height:60px!important}
+.btn_container{display:flex;align-items:center;justify-content:flex-end;}
+.btn_container input[type=button],.btn_container input[type=submit]{font-family:'PT Sans Pro-Regular';font-size:16px;font-weight:400;line-height:54px;min-width:194px;height:54px!important}
 .btn_container .change{font-family:'PT Sans Pro-Narrow Light';font-size:25px;font-weight:300;position:relative;margin:0 32px}
 .btn_container .change input{display:flex;align-items:center;justify-content:center;height:60px;width:auto;border-radius:30px;border:1px solid #328a27;position:relative;background-color:transparent;color:#328a27;position:relative}
 .btn_container .change input:hover{background-color:#328a27;opacity:1;color:#fff}
@@ -1455,7 +1480,7 @@ header.mobile .top .lk .fa{font-size:24px}
 .order_confirm .checkin_block{display:flex;flex-direction:column;max-width:380px;width:100%;margin:24px auto 16px}
 .order_confirm .checkin_block label{color:#707070;margin-bottom:16px}
 .order_confirm .checkin_block label.error{color:red;margin-bottom:16px}
-.order_confirm .btn_container{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr;grid-column-gap:20px;max-width: 35.3125rem;margin: 0 auto;}
+.order_confirm .btn_container{display:grid;grid-template-columns:1fr;grid-template-rows:1fr;grid-column-gap:20px;max-width: 35.3125rem;margin: 0 auto;margin-top: 20px;margin-bottom: 100px;}
 .order_confirm .order-total .total-price{display: grid;grid-template-columns: 1fr 1fr;justify-content: end;align-items: end;justify-items: end;grid-column-gap:20px;color:#000;font-family:"Istok Web",sans-serif,Helvetica,Arial,sans-serif;font-size:16px;font-weight:300;letter-spacing:.6px;margin: 0px 0px 5px 0px;}
 .order_confirm .order-total .total-price > span:first-child{font-weight: bold;}
 .order_confirm .order-total .total-price_summ{font-family:"Istok Web - Bold";font-size:24px;}
@@ -1474,9 +1499,9 @@ header.mobile .top .lk .fa{font-size:24px}
 .order_confirm.email_exists .social_auth li a:hover{opacity:.75}
 .order_confirm.email_exists .social_auth p{display:block;text-align:center;color:#a8a8a8;font-family:'PT Sans Pro-Narrow Light';font-size:16px;margin:8px auto}
 @media (max-width:1023px){
+    .order_confirm .btn_container{margin-top: 0;}
     .product .prices-wrapper{justify-content:flex-end;}
     .product .prices .div:nth-child(1){display:none;}
-    .cart_order.your_cart,.cart_order.your_order{margin:0 0 24px 0}
     .cart_order.your_cart .el,.cart_order.your_order .el{margin-bottom:0}
     .cart_order.your_cart .el .title,.cart_order.your_order .el .title{margin:24px 0;font-size:28px}
     .cart_order.your_cart .el .pharma_info,.cart_order.your_order .el .pharma_info{padding:12px 16px}
@@ -1488,10 +1513,14 @@ header.mobile .top .lk .fa{font-size:24px}
     .cart_order.your_cart .order_confirm .content .block,.cart_order.your_order .order_confirm .content .block{padding:0}
     .cart_order.your_cart .order_confirm .content .block label,.cart_order.your_order .order_confirm .content .block label{font-size:16px;margin-left:0;padding-left:16px}
     .cart_order.your_cart .order_confirm .content .block input[type=text],.cart_order.your_order .order_confirm .content .block input[type=text]{z-index:1;background-color:transparent}
-    .cart_order.your_cart .order_confirm .btn_container,.cart_order.your_order .order_confirm .btn_container{display:grid;grid-template-columns:1fr;grid-gap:16px;grid-row-gap:16px;grid-column-gap:16px;grid-template-rows:1fr 1fr}
+    .cart_order.your_cart .order_confirm .btn_container,.cart_order.your_order .order_confirm .btn_container{display:grid;grid-template-columns:1fr;grid-gap:16px;grid-row-gap:16px;grid-column-gap:16px;grid-template-rows:1fr}
     .cart_order.your_cart .order_confirm .btn_container .summary_price .hint,.cart_order.your_order .order_confirm .btn_container .summary_price .hint{position:relative;bottom:0}
 }
 @media (max-width:767px){
+    .btn_container input[type=button],.btn_container input[type=submit]{height:44px!important;line-height: 44px;}
+    .form-label{left: 24px;}
+    .cart_order.your_cart .el .bottom .form-control{min-height:44px;padding-right: 47px;padding-left: 24px;line-height: 20px;}
+    .order_confirm .btn_container{margin-bottom: 70px;}
     .product .product_set-toggle a{font-size:16px;line-height:20px;}
     .product .prices .div{width:max-content;}
     .cart_order.your_cart .product-code{font-size:12px;line-height:16px;}
@@ -1511,6 +1540,7 @@ header.mobile .top .lk .fa{font-size:24px}
     .cart_order.your_cart .order_confirm .content .block input .hint,.cart_order.your_order .order_confirm .content .block input .hint{font-size:1rem}
 }
 @media (max-width:600px){
+  .btn_container input[type=button],.btn_container input[type=submit]{font-size:16px!important;}
     .cart_order.your_cart .el .content .bottom .order_price,.cart_order.your_order .el .content .bottom .order_price{text-align:left;margin-left:0}
     .cart_order.your_cart .el .content .bottom .order_price strong .bonus,.cart_order.your_order .el .content .bottom .order_price strong .bonus{right:auto;left:0}
     .cart_order.your_cart .order_confirm .content,.cart_order.your_order .order_confirm .content{grid-template-columns:100%;grid-template-rows:1fr 1fr 1fr}
@@ -1522,6 +1552,8 @@ header.mobile .top .lk .fa{font-size:24px}
     .cart_order.your_cart .order_confirm .btn_container .btn,.cart_order.your_order .order_confirm .btn_container .btn{grid-gap:16px;grid-row-gap:16px;grid-column-gap:16px;font-size:18px;grid-template-columns:1fr}
 }
 @media (max-width:480px){
+    .cart_order.your_cart .order_confirm,.cart_order.your_order .order_confirm{margin-top:24px}
+    .btn_container input[type=button],.btn_container input[type=submit]{width:100%;}
     .cart_order.your_cart .el .product .product_photo,.cart_order.your_order .el .product .product_photo{min-width:60px;margin:0 auto}
     .cart_order.your_cart .el .product .remove, .cart_order.your_order .el .product .remove{bottom: 25px;}
     .product .remove .remove_btn{width:28px;height:28px;}
@@ -2912,7 +2944,7 @@ footer {margin-top: auto;}
 .order_confirm .btn_container>*:nth-child(1) p {color: #c10010;font-size: .875rem;font-weight: 300;letter-spacing: 0.3px;}
 .order_confirm .btn_container .btn input[type="submit"]:disabled {pointer-events: none;background-color: #e6e6e6;}
 .card_order .select_pharma {padding-bottom: 1.5rem;margin-bottom: 1.5rem;border-bottom: 1px solid#328a27n;}
-.cart_order.your_cart .el .content, .cart_order.your_order .el .content, .cart_order.your_cart .el .bottom {border: none;}
+.cart_order.your_cart .el .content, .cart_order.your_order .el .content, .cart_order.your_cart .el .bottom {border: none;padding: 0;}
 
 .timer {margin: .5rem auto;display: flex;align-items: center;justify-content: center;}
 .bx-authform {margin: 0 auto 1.5rem;max-width: 565px;width: 320px;}

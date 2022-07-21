@@ -10,7 +10,7 @@
 .basket-coupon-block-field {min-width: 235px;-webkit-box-flex: 1;-ms-flex: 1;-webkit-flex: 1;flex: 1;}
 .basket-coupon-block-coupon-btn {position: absolute;top: 50%;right: 10px;display: block;margin-top: -4px;padding: 0;width: 8px;height: 8px;border: none;border-right: 2px solid #8da3ad;border-bottom: 2px solid #8da3ad;border-radius: 0;background-color: transparent;content: "";cursor: pointer;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);}
 .basket-coupon { margin: 10px 0px; }
-.basket-coupon > div { float: right; }
+/* .basket-coupon > div { float: right; } */
 
 .basket-items-list-item-notification .basket-items-list-item-removed-container > div { width: 80%; }
 .basket-items-list-item-notification .basket-items-list-item-removed-container > div.basket-items-list-item-removed-block { width: auto; padding: .5rem;}

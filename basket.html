@@ -777,15 +777,21 @@
                                     </tbody>
                                 </table>
                                 <div class="bottom" data-entity="basket-total-block">
-                                    <div data-entity="basket-checkout-aligner">
-                                        <div class="basket-coupon clearfix">
+                                    <div data-entity="basket-checkout-aligner" class="pharmacy-total-coupon">
+                                      <!-- class="pharmacy-total-coupon" после применения купона, зачеркнутая сумма -->
+                                        <div class="basket-coupon clearfix form-group-input">
                                             <div class="basket-coupon-section">
                                                 <div class="basket-coupon-block-field">
-                                                    <div class="basket-coupon-block-field-description">Введите код купона для скидки:</div>
                                                     <div class="form">
-                                                        <div class="form-group" style="position: relative;">
-                                                            <input type="text" class="form-control" id="" placeholder="" data-entity="basket-coupon-input">
-                                                            <span class="basket-coupon-block-coupon-btn"></span>
+                                                        <!-- <div class="form-group form-group--checked" style="position: relative;">
+                                                            <input type="text" name="text" class="form-control form-control__input" id="basket-coupon-input" placeholder="Введите купон" data-entity="basket-coupon-input">
+                                                            <label for="basket-coupon-input" class="form-label">Введите купон</label>
+                                                            <span class="basket-coupon-block-coupon-btn basket-coupon-block-coupon-btn__active"></span>
+                                                        </div> -->
+                                                        <div class="form-group">
+                                                          <input required="" type="text" name="text" autocomplete="off" class="form-control form-control__input">
+                                                          <label class="form-label">Введите купон</label>
+                                                          <span class="basket-coupon-block-coupon-btn basket-coupon-block-coupon-btn__active"></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -795,17 +801,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="pharmacy-total-bsaket pharmacy-total-sum-old">
-                                            <span>Цена без скидки: </span>
-                                            <span>4&nbsp;779 ₽</span>
-                                        </div>
-                                        <div class="pharmacy-total-bsaket pharmacy-total-sum-difference">
-                                            <span>Ваша экономия: </span>
-                                            <span>231 ₽</span>
-                                        </div>
                                         <div class="pharmacy-total-bsaket pharmacy-total-sum">
                                             <span>Сумма: </span>
-                                            <span data-entity="basket-total-price">1&nbsp;904 ₽</span>
+                                            <span data-entity="basket-total-price">24&nbsp;845&nbsp;₽</span>
+                                        </div>
+                                        <div class="pharmacy-total-result">
+                                          <span>Итого: </span>
+                                          <span>22&nbsp;845&nbsp;₽</span>
                                         </div>
                                     </div>
                                 </div>
@@ -837,11 +839,9 @@
                 <div id="bx_2066034866_SOJ_continer_props" class="order-props content">
                 </div>
                 <div id="bx_2066034866_SOJ_continer_user_props" class="checkin_block" style="display: none;"></div>
-                <div id="bx_2066034866_SOJ_continer_total" class="btn_container">
-                    <div class="order-total">
-                        <div class="total-price total-price_summ"><span>Итого: </span><span>1&nbsp;904 ₽</span></div>
-                    </div>
-                    <div class="btn"><input data-save-button="true" type="submit" value="Подтвердить заказ"></div>
+                <div id="bx_2066034866_SOJ_continer_total" class="btn_container pharmacy-total-coupon">
+                        <!-- class="pharmacy-total-coupon" после применения купона, margin-top: 0; -->
+                    <div class="btn"><input data-save-button="true" type="submit" value="Оформить заказ" class="pharmacy-total-coupon__btn"></div>
                 </div>
             </div>
         </div>

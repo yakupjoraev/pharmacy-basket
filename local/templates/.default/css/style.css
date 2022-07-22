@@ -1373,7 +1373,201 @@ header.mobile .top .lk .fa{font-size:24px}
 .order_confirm .btn_container.pharmacy-total-coupon{margin-top: 0;}
 .order_confirm .btn_container .pharmacy-total-coupon__btn{border-radius: 27px;}
 
+.slide-product {
+  margin-top: 20px;
+  margin-bottom: 6px;
+  padding: 0 30px;
+}
+
+.slide-product__inner {
+  position: relative;
+}
+
+.slide-product__body {
+  display: flex;
+  height: 100%; 
+  transition: all .5s;
+}
+
+.slide-product__body .slide-product__card {
+  display: grid;
+  max-width: 229px;
+  place-items: center;
+  padding: 16px 20px;
+  border: 1px solid #E4E4E4;
+  background-color: #ffffff;
+}
+
+.slide-product__card >*{
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.slide-product__data {
+  font-family: 'PT Sans Pro-Narrow Light';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #707070;
+}
+
+.slide-product__title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  height: 50px;
+  overflow: hidden;
+  font-family: 'PT Sans Pro-Narrow Bold';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+
+.slide-product__price {
+  font-family: 'PT Sans Pro-Narrow Bold';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #C10010;
+}
+
+.slide-product__body .slick-arrow {
+  position: absolute;
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  background-image: url('../img/arrow-to-slider-cards.svg');
+  background-repeat: no-repeat;
+  background-position: 25%;
+  background-color:#328A27;
+  font-size: 0;
+}
+
+.slide-product__body .slick-prev {
+  top: 33%;
+  left: -30px;
+  transform: rotate(0);
+}
+
+.slide-product__body .slick-next {
+  top: 33%;
+  right: -30px;
+  transform: rotate(180deg);
+}
+
+.slide-product__body .slick-disabled {
+  background-color:#E4E4E4;
+}
+
+.slide-product__body .slick-list {
+  z-index: 2;
+}
+
+.slide-product__inner-title {
+  font-family: 'PT Sans Pro-Narrow Bold';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.slide-product__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+ }
+ 
+ .slide-product__label {
+   position: relative;
+  display: block;
+  width: 108px;
+  height: 33px;
+  border-radius: 27.5px;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+ }
+ 
+ /* Create a custom checkbox */
+ .slide-product__checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #328A27;
+  transition: all 0.3s;
+  border-radius: 27.5px;
+ }
+ 
+ /* When the checkbox is checked, add a blue background */
+ .slide-product__input:checked ~ .slide-product__checkmark {
+  background: #328A27;
+ }
+ 
+ /* Create the checkmark/indicator (hidden when not checked) */
+ .slide-product__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+ }
+
+ .slide-product__checkmark:before {
+  content: "Выбрать";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'PT Sans Pro-Narrow';
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #328A27;
+ }
+ 
+ /* Show the checkmark when checked */
+ .slide-product__input:checked ~ .slide-product__checkmark:after {
+  display: block;
+ }
+
+ .slide-product__input:checked ~ .slide-product__checkmark:before {
+  content: "Этот";
+  color: #ffffff;
+ }
+ 
+ /* Style the checkmark/indicator */
+ .slide-product__label .slide-product__checkmark:after {
+  left: 13px;
+  top: 25%;
+  width: 11px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 0 3px 3px;
+  transform: rotate(-45deg);
+ }
+
+ @media (max-width:480px){
+  .slide-product {margin-top: 24px;padding: 0;}
+ }
+
 @media (max-width:767px){
+  .slide-product__data {font-size: 16px;line-height: 19px;}
+  .slide-product__title {height: 40px;font-size: 16px;line-height: 20px;}
+  .slide-product__price {font-size: 24px;line-height: 28px;}
+    .slide-product__body .slick-arrow{display: none !important;}
+    .slide-product__inner-title {font-size: 24px;line-height: 28px;}
     .pharmacy-total-result{font-size: 28px;line-height: 32px;}
     .pharmacy-total-coupon .pharmacy-total-sum{font-size: 24px;line-height: 24px;}
     .pharmacy-total-sum{font-size: 24px;line-height: 24px;}

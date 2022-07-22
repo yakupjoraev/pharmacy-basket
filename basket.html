@@ -424,12 +424,9 @@
                             <div class="control__indicator"><i class="fa fa-check after" aria-hidden="true"></i></div>
                         </label>
                         </div>
-                        <div class="basket-header-action__right">
-                          <p class="basket-header-action__right-text">В корзине 4 товара</p>
+                        <div class="basket-header-action_2">
+                            <div class="basket-items-list-header-filter"><a href="javascript:void(0)" class="basket-items-list-header-filter-item active" data-entity="basket-items-count" data-filter="all">В корзине 4 товара</a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="similar" style="display: none;"></a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="warning" style="display: none;"></a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="delayed" style="display: none;"></a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="not-available" style="display: none;"></a></div>
                         </div>
-                        <!-- <div class="basket-header-action_2">
-                            <div class="basket-items-list-header-filter"><a href="javascript:void(0)" class="basket-items-list-header-filter-item active" data-entity="basket-items-count" data-filter="all" style="display: none;"></a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="similar" style="display: none;"></a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="warning" style="display: none;"></a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="delayed" style="display: none;"></a><a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="not-available" style="display: none;"></a></div>
-                        </div> -->
                     </div>
                     <div id="basket-items-list-container">
                         <div class="basket-items-list-overlay" id="basket-items-list-overlay" style="display: none;"></div>
@@ -601,7 +598,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="div">
-                                                    <div id="basket-item-sum-price-501792" class="summary">693 ₽</div>
+                                                    <div id="basket-item-sum-price-501792" class="summary">
+                                                      <p class="old-summary">924 ₽</p>
+                                                      <p class="price-summry">693 ₽</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </td>
@@ -950,28 +950,12 @@
             <div class="gift-parent-container" data-entity="parent-container" data-showed="false" style="display: none; opacity: 0;"><p class="title">Выберите один из подарков</p>
                 <div class="slider_viewed_need slider_gift-js" data-entity="sale-products-gift-container"></div>
             </div>
-            <div id="bx_2066034866_SOJ_form" class="order_confirm">
-                <div id="bx_2066034866_SOJ_continer_region" class="order-region" style="display: none;">
-                    <input type="hidden" name="PERSON_TYPE" value="1">
-                </div>
-                <div id="bx_2066034866_SOJ_continer_paysystem" class="order-paysystem" style="display: none;">
-                    <div class="radialContainer radialContainerBorder radialContainerHidden">
-                        <div class="radialContainer__item">
-                            <input id="ID_PAY_SYSTEM_ID_1" name="PAY_SYSTEM_ID" type="radio" class="radialCheckbox" value="1">
-                            <label for="ID_PAY_SYSTEM_ID_1" class="radio-label"></label>
-                            <span>Оплата в аптеке. Оплата производится наличными деньгами, в момент получения заказа. Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="bx_2066034866_SOJ_continer_info" class="order-info" style="display: none;"></div>
-                <div id="bx_2066034866_SOJ_continer_props" class="order-props content">
-                </div>
-                <div id="bx_2066034866_SOJ_continer_user_props" class="checkin_block" style="display: none;"></div>
-                <div id="bx_2066034866_SOJ_continer_total" class="btn_container pharmacy-total-coupon">
-                        <!-- class="pharmacy-total-coupon" после применения купона, margin-top: 0; -->
-                    <div class="btn"><input data-save-button="true" type="submit" value="Оформить заказ" class="pharmacy-total-coupon__btn"></div>
-                </div>
+            <div class="pharmacy-basket__btn"> 
+              <div class="btn_container pharmacy-total-coupon">
+              <!-- class="pharmacy-total-coupon" после применения купона, margin-top: 0; -->
+              <div class="basket__btn"><input data-save-button="true" type="submit" value="Оформить заказ" class="pharmacy-total-coupon__btn"></div>
             </div>
+          </div>
         </div>
     </section>
     <footer>

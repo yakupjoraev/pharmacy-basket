@@ -104,17 +104,17 @@
 <div class="all_content">
     <header class="desk">
         <div class="top">
-            <div class="container">
+            <!-- <div class="container">
                 <div id="bx_145159304_GSC_form_continer" class="ph_location">
                     <div class="city_check">
-                        <div class="city"><p>Москва и Московская область</p><i class="fa fa-chevron"></i></div>
+                        <div class="city"><p>Москва и МО</p><i class="fa fa-chevron"></i></div>
                         <div class="city_list"><i class="close fa fa-times"></i>
                             <div class="top">
                                 <div class="city"><p>Москва и Московская область</p><i class="fa fa-chevron"></i></div>
                             </div>
                             <div id="bx_145159304_GSC_result_continer" class="block">
                                 <ul>
-                                    <li><a href="javascript:void(0)" data-gsc-section="146">Москва и Московская область</a></li>
+                                    <li><a href="javascript:void(0)" data-gsc-section="146">Москва и МО</a></li>
                                     <li><a href="javascript:void(0)" data-gsc-element="49161"> - - Москва</a></li>
                                     <li><a href="javascript:void(0)" data-gsc-element="49162"> - - Одинцово</a></li>
                                     <li><a href="javascript:void(0)" data-gsc-element="49163"> - - Мытищи</a></li>
@@ -138,19 +138,56 @@
                     <a class="ph_other reselect_pharma" href="javascript:void(0)" data-lsc="btn">выбрать другую</a></div>
                 <div class="lk"><a class="login" href="#loginPopup" data-fancybox>Войти</a></div>
             </div>
-        </div>
+        </div> -->
         <div class="center">
             <div class="container">
-                <a class="logo" href="/">
+              <div class="logo-container">
+                 <a class="logo" href="/">
                     <img src="local/templates/.default/img/header-logo.svg" alt="Аптеки-риэлти" title="Аптеки-риэлти"/>
                 </a>
+                <div id="bx_145159304_GSC_form_continer" class="ph_location">
+                  <div class="city_check">
+                      <div class="city"></i><p>Москва и МО</p><i class="fa fa-chevron"></i></div>
+                      <div class="city_list"><i class="close fa fa-times"></i>
+                          <div class="top">
+                              <div class="city"><p>Москва и Московская область</p><i class="fa fa-chevron"></i></div>
+                          </div>
+                          <div id="bx_145159304_GSC_result_continer" class="block">
+                              <ul>
+                                  <li><a href="javascript:void(0)" data-gsc-section="146">Москва и МО</a></li>
+                                  <li><a href="javascript:void(0)" data-gsc-element="49161"> - - Москва</a></li>
+                                  <li><a href="javascript:void(0)" data-gsc-element="49162"> - - Одинцово</a></li>
+                                  <li><a href="javascript:void(0)" data-gsc-element="49163"> - - Мытищи</a></li>
+                                  <li><a href="javascript:void(0)" data-gsc-element="49164"> - - Котельники</a></li>
+                                  <li><a href="javascript:void(0)" data-gsc-element="49165"> - - Химки</a></li>
+                                  <li><a href="javascript:void(0)" data-gsc-element="49959"> - - Видное</a></li>
+                                  <li><a href="javascript:void(0)" data-gsc-element="50421"> - - Истра</a></li>
+                                  <li><a href="javascript:void(0)" data-gsc-element="49166"> - - п. Развилка</a></li>
+                                  <li><a href="javascript:void(0)" data-gsc-element="49167"> - - Реутов</a></li>
+                                  <li><a href="javascript:void(0)" data-gsc-section="153">Санкт-Петербург и Ленинградская область</a></li>
+                                  <li><a href="javascript:void(0)" data-gsc-element="49168"> - - Санкт-Петербург</a></li>
+                              </ul>
+                          </div>
+                          <form class="searchcity">
+                              <div class="manual_input"><input class="search_city" type="search" onkeyup="obbx_145159304_GSC.inpKeyGeobase(event);" autocomplete="off" placeholder="Название города"/></div>
+                          </form>
+                      </div>
+                  </div>
+                  <!-- <p class="ph_name" data-lsc="btn"><img src="local/templates/.default/img/map_point.svg" alt="check">Большая Семеновская, д. 20, с. 1</p>
+                  <div class="header_contact_data"><a class="ph_number" href="tel:84954191919">8 (495) 419 19 19</a><span class="ph_work_time">с 08:00 до 22:00 </span></div>
+                  <a class="ph_other reselect_pharma" href="javascript:void(0)" data-lsc="btn">выбрать другую</a></div>
+              <div class="lk"><a class="login" href="#loginPopup" data-fancybox>Войти</a></div> -->
+          </div>
+              </div>
+               
                 <ul class="site_nav">
-                    <li><a href="/aktsii/"><p class="dash">Акции</p></a></li>
-                    <li><a href="/our-pharmacy/"><p class="dash">Наши АПТЕКИ</p></a></li>
+                    <li><a href=""><p class="dash">Наши АПТЕКИ</p></a></li>
+                    <li><a href="/our-pharmacy/"><p class="dash">Как сделать заказ?</p></a></li>
                     <li>
-                        <a class="header_link uppercase" href="/personal/favorites/" data-favorites="count" title="Избранное"><span class="header_link-title">Избранное</span><i class="icon-user_favorites"><sup>0</sup></i></a></li>
-                    <li>
-                    </li>
+                        <a class="header_link uppercase" href="/personal/favorites/" data-favorites="count" title="Избранное"><span class="header_link-title dash">Избранное</span><i class="icon-user_favorites"><sup>5</sup></i></a>
+                      </li>
+                        <li><a href=""><p class="dash">Корзина</p><img class="header-basket-icon" src="/local/templates/.default/img/header-basket.svg" alt="Корзина"><span class="header-basket-count">4</span></a></li>
+                        <li><a href=""><p class="dash">Личный кабинет</p></a></li>
                 </ul>
             </div>
         </div>
@@ -159,15 +196,17 @@
                 <div class="menu"><a href="#"><span>каталог </span><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></a></div>
                 <div class="search_area">
                     <form id="title-search" class="search" action="/catalog/">
-                        <input id="title-search-input" class="search-input-form-text" type="search" name="q" placeholder="Поиск препаратов" value="" autocomplete="off"/>
+                        <input id="title-search-input" class="search-input-form-text" type="search" name="q" placeholder="Умный поиск" value="" autocomplete="off"/>
                         <input class="search-input-hints" type="search" value=""/>
-                        <input class="find" name="s" type="submit" value="Найти" title="Найти"/>
+                        <input class="find" name="s" type="submit" value="найти" title="Найти"/>
                     </form>
 
                     <div class="offer">
-                        <span>Поиск по болезням, лекарствам, веществу:</span>
-                        <a class="suggest-copy-paste" href="javascript:void(0)">артра</a>
+                        <span>Например:</span>
+                        <a class="suggest-copy-paste" href="javascript:void(0)">подарки на новый год</a>
+                        <a class="suggest-copy-paste" href="javascript:void(0)">простуда</a>
                         <a class="suggest-copy-paste" href="javascript:void(0)">витамины</a>
+                        <a class="suggest-copy-paste" href="javascript:void(0)">лучубная косметика</a>
                     </div>
                 </div>
                 <div class="catalog">

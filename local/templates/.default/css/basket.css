@@ -8,7 +8,7 @@
 .basket-coupon-section {-webkit-box-flex: 2;-ms-flex: 2;-webkit-flex: 2;flex: 2;}
 .basket-coupon-block-field-description {color: #a1a1a1;font: 400 12px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;}
 .basket-coupon-block-field {min-width: 235px;-webkit-box-flex: 1;-ms-flex: 1;-webkit-flex: 1;flex: 1;}
-.basket-coupon-block-coupon-btn {position: absolute;top: 50%;right: 10px;display: block;margin-top: -4px;padding: 0;width: 8px;height: 8px;border: none;border-right: 2px solid #8da3ad;border-bottom: 2px solid #8da3ad;border-radius: 0;background-color: transparent;content: "";cursor: pointer;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);}
+.basket-coupon-block-coupon-btn {position: absolute;top: 50%;right: 10px;display: block;padding: 0;width: 8px;height: 8px;border: none;border-right: 2px solid #8da3ad;border-bottom: 2px solid #8da3ad;border-radius: 0;background-color: transparent;content: "";cursor: pointer;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);}
 .basket-coupon { margin: 10px 0px; }
 /* .basket-coupon > div { float: right; } */
 

@@ -410,20 +410,76 @@
     <header class="mobile">
         <div class="container">
             <div class="top">
-                <div class="burger_menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                <a class="logo" href="/"><img src="local/templates/.default/img/header-logo.svg" alt="Аптеки-риэлти" title="Аптеки-риэлти"/></a>
-
-                <a class="ph_number" href="tel:8 (495) 419 19 19">8 (495) 419 19 19</a>
-                <div class="lk"><a class="login" href="#loginPopup" data-fancybox><p>Войти</p><i class="fa fa-sign-in"></i></a></div>
+                <!-- <div class="burger_menu"><i class="fa fa-bars" aria-hidden="true"></i></div> -->
+                <div class="mobile-logo-city">
+                        <a class="logo" href="/"><img src="local/templates/.default/img/header-logo.svg" alt="Аптеки-риэлти" title="Аптеки-риэлти"/></a>
+                        <div id="bx_145159304_GSC_form_continer" class="ph_location">
+                          <div class="city_check">
+                              <div class="city"></i><p>Москва и МО</p><i class="fa fa-chevron"></i></div>
+                              <div class="city_list"><i class="close fa fa-times"></i>
+                                  <div class="top">
+                                      <div class="city"><p>Москва и Московская область</p><i class="fa fa-chevron"></i></div>
+                                  </div>
+                                  <div id="bx_145159304_GSC_result_continer" class="block">
+                                      <ul>
+                                          <li><a href="javascript:void(0)" data-gsc-section="146">Москва и МО</a></li>
+                                          <li><a href="javascript:void(0)" data-gsc-element="49161"> - - Москва</a></li>
+                                          <li><a href="javascript:void(0)" data-gsc-element="49162"> - - Одинцово</a></li>
+                                          <li><a href="javascript:void(0)" data-gsc-element="49163"> - - Мытищи</a></li>
+                                          <li><a href="javascript:void(0)" data-gsc-element="49164"> - - Котельники</a></li>
+                                          <li><a href="javascript:void(0)" data-gsc-element="49165"> - - Химки</a></li>
+                                          <li><a href="javascript:void(0)" data-gsc-element="49959"> - - Видное</a></li>
+                                          <li><a href="javascript:void(0)" data-gsc-element="50421"> - - Истра</a></li>
+                                          <li><a href="javascript:void(0)" data-gsc-element="49166"> - - п. Развилка</a></li>
+                                          <li><a href="javascript:void(0)" data-gsc-element="49167"> - - Реутов</a></li>
+                                          <li><a href="javascript:void(0)" data-gsc-section="153">Санкт-Петербург и Ленинградская область</a></li>
+                                          <li><a href="javascript:void(0)" data-gsc-element="49168"> - - Санкт-Петербург</a></li>
+                                      </ul>
+                                  </div>
+                                  <form class="searchcity">
+                                      <div class="manual_input"><input class="search_city" type="search" onkeyup="obbx_145159304_GSC.inpKeyGeobase(event);" autocomplete="off" placeholder="Название города"/></div>
+                                  </form>
+                              </div>
+                          </div>
+                          <!-- <p class="ph_name" data-lsc="btn"><img src="local/templates/.default/img/map_point.svg" alt="check">Большая Семеновская, д. 20, с. 1</p>
+                          <div class="header_contact_data"><a class="ph_number" href="tel:84954191919">8 (495) 419 19 19</a><span class="ph_work_time">с 08:00 до 22:00 </span></div>
+                          <a class="ph_other reselect_pharma" href="javascript:void(0)" data-lsc="btn">выбрать другую</a></div>
+                      <div class="lk"><a class="login" href="#loginPopup" data-fancybox>Войти</a></div> -->
+                  </div>
+                </div>
+          
+                
+                <!-- <a class="ph_number" href="tel:8 (495) 419 19 19">8 (495) 419 19 19</a> -->
+                <div class="mobile-header-basket">
+                  <a class="mobile-header-basket__link" href="">
+                    <img class="mobile-header-basket__img" src="/local/templates/.default/img/header-basket.svg" alt="">
+                    <span class="mobile-header-basket__count">
+                      4
+                    </span>
+                  </a>
+                </div>
+                <div class="lk"><a class="login" href="#loginPopup" data-fancybox><img src="/local/templates/.default/img/header-login-icon.svg" alt="header-login-icon"></a></div>
+                <div class="mobile-header-grid">
+                  <img src="/local/templates/.default/img/header-grid-icon.svg" alt="header-grid-icon">
+                </div>
             </div>
 
             <div class="bottom">
-                <div class="search_area">
+                <div class="burger_menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                <div class="bottom-search-offer">
+                           <div class="search_area">   
                     <form id="title-search-mobile" class="search" action="/catalog/">
-                        <input id="title-search-input-mobile" class="search-input-form-text" type="search" name="q" placeholder="Поиск препаратов" value="" autocomplete="off"/>
+                        <input id="title-search-input-mobile" class="search-input-form-text" type="search" name="q" placeholder="Умный поиск" value="" autocomplete="off"/>
                         <input class="search-input-hints" type="search" value=""/>
                         <input class="find" name="s" type="submit" value="Найти" title="Найти"/>
-                    </form>
+                    </form> 
+                    </div> 
+                          <div class="offer">
+                      <span>Например:</span>
+                      <a class="suggest-copy-paste" href="javascript:void(0)">подарки на новый год</a>
+                      <a class="suggest-copy-paste" href="javascript:void(0)">простуда</a>
+                      <a class="suggest-copy-paste" href="javascript:void(0)">витамины</a>
+                </div>
                 </div>
             </div>
         </div>

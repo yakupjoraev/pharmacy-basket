@@ -80,8 +80,7 @@ b{font-weight:700}
 .ymaps-2-1-79-balloon__close-button{width:32px !important;height:32px !important;display:flex !important;align-items:center !important;justify-content:center !important;cursor:pointer !important;background:none !important;opacity:1 !important;}
 .ymaps-2-1-79-balloon__close-button:before{content: '\f00d' !important;font-family: FontAwesome;display:block !important;color:#fff !important;font-size:16px !important;}
 .ymaps-2-1-79-balloon__close-button:hover:before{opacity:0.75 !important;}
-.ymaps-2-1-79-balloon__tail:after{background-color:#328a27 !important;}
-.ymaps-2-1-79-balloon__close+.ymaps-2-1-79-balloon__content{padding:0 !important;max-width:300px;background-color:#328a27 !important;}
+.ymaps-2-1-79-balloon__close+.ymaps-2-1-79-balloon__content{padding:0 !important;max-width:300px;}
 .balloon-content_header{margin:0px 0px 10px 0px;max-width: 300px;}
 .balloon-content_header .pharma_name{font-size:20px;}
 .balloon-content_body{margin:0px 0px 10px 0px;max-width: 300px;}

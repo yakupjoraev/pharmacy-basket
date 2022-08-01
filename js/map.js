@@ -25,7 +25,7 @@ ymaps.ready(function(){
     var map = new ymaps.Map('map', {//строка 'map' это id блока в котором будет заиничена карта
         center: [54.782635, 32.045283], //Задаем центр карты
         zoom: 10,
-        controls: ['zoomControl']
+        controls: []
     });
 
     //Коллекции (создание)
@@ -89,18 +89,37 @@ ymaps.ready(function(){
 
         //Создание макета содержимого балуна.
         BalloonContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div class="balloon-content_header"><p class="pharma_name">{{properties.titleChain}}</p></div>' +
-            '<div class="balloon-content_body">' +
-            '<p class="address">{{properties.address}}</p>' +
-            '<p class="station">' +
-            '<span class="metro"></span> {{properties.metro}}' +
-            ',<span class="people"></span> {{properties.metroTime}} ' +
-            '</p>' +
-            '<p class="schedule">{{properties.schedule}}</p>' +
+            // '<div class="balloon-content_header"><p class="pharma_name">{{properties.titleChain}}</p></div>' +
+            // '<div class="balloon-content_body">' +
+            // '<p class="address">{{properties.address}}</p>' +
+            // '<p class="station">' +
+            // '<span class="metro"></span> {{properties.metro}}' +
+            // ',<span class="people"></span> {{properties.metroTime}} ' +
+            // '</p>' +
+            // '<p class="schedule">{{properties.schedule}}</p>' +
+            // '</div>' +
+            // '<div class="balloon-content_footer">' +
+            // '<span class="button button--large button--6" data-map-id="{{properties.id}}">Выбрать эту</span>' +
+            // '</div>',
+
+            '<div class="new-balloon">' +
+            '<div class="new-balloon__inner">' +
+              '<p class="new-balloon__info">' +
+                'Внимание в данной аптеке отсутствует 1 позиция' +
+              '</p>' +
+              '<p class="new-balloon__text">' +
+                'После оформления заказа она останется' +
+                'в корзине, какая именно можно увидеть' +
+                'ниже' +
+              '</p>' +
+              '<span class="new-balloon__worked">' +
+                'Работает с 08:00 до 21:00' +
+              '</span>' + 
+              '<a class="new-balloon__link" href="">' +
+                'Выбрать эту' +
+              '</a>' +
             '</div>' +
-            '<div class="balloon-content_footer">' +
-            '<span class="button button--large button--6" data-map-id="{{properties.id}}">Выбрать эту</span>' +
-            '</div>',
+          '</div>',
             {
                 build: function() {
                     BalloonContentLayout.superclass.build.call(this);
@@ -120,9 +139,10 @@ ymaps.ready(function(){
             iconImageOffset: [-13, -48],
             iconactive: '/local/templates/.default/img/map_point.svg', //Пути к иконкам
 
-            balloonOffset: [0,-50],
+            balloonOffset: [60, 190],
             balloonContentLayout: BalloonContentLayout,
-            balloonPanelMaxMapArea: 0
+            balloonPanelMaxMapArea: 0,
+            zIndexActive: 1000
         };
 
         return pointOptions;

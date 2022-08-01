@@ -619,6 +619,7 @@
         </ul>
       </div>
     </section>
+
     <section class="pege-title">
       <div class="container">
         <h1>Оформление заказа</h1>
@@ -682,6 +683,7 @@
 
               <label for="map-list__list" value="list" class="map-list__content-addresses map-list__switcher addresses">
                 <div class="addresses__inner">
+                  <!-- selected-pharmacies для родителя (стили дисаблед), selected-address для чилдрена(стили актив) -->
                   <ul class="addresses__items">
 
                     <li class="addresses__item">
@@ -707,7 +709,14 @@
                     </li>
 
                     <li class="addresses__item">
-                      <button type="submit" class="addresses__button">Выбрать эту</button>
+                      <a href="" class="addresses__button">Выбрать эту</a>
+                      <a href="" class="addresses__button-checked-mobile">Отменить выбор</a>
+                      <a href="" class="addresses__button-checked">Выбрана <span class="addresses__button-remove">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
+                          <path d="M15 15L25 25M25 15L15 25" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span></a>
                     </li>
 
                   </ul>
@@ -739,12 +748,19 @@
                     </li>
 
                     <li class="addresses__item">
-                      <button type="submit" class="addresses__button">Выбрать эту</button>
+                      <a href="" class="addresses__button">Выбрать эту</a>
+                      <a href="" class="addresses__button-checked-mobile">Отменить выбор</a>
+                      <a href="" class="addresses__button-checked">Выбрана <span class="addresses__button-remove">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
+                          <path d="M15 15L25 25M25 15L15 25" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span></a>
                     </li>
 
                   </ul>
 
-                  <ul class="addresses__items">
+                  <ul class="addresses__items addresses__items-missing">
 
                     <li class="addresses__item">
                       <span class="addresses__count">-2</span>
@@ -773,8 +789,42 @@
                       <time class="addresses__time">Воскресенье: 10:00-21:00</time>
                     </li>
 
-                    <li class="addresses__item">
-                      <button type="submit" class="addresses__button">Выбрать эту</button>
+                    <li class="addresses__item addresses__item-tooltip">
+                      <a data-fancybox href="#item-modal" class="addresses__button">Выбрать эту</a>
+                      <a href="" class="addresses__button-checked-mobile">Отменить выбор</a>
+                      <a href="" class="addresses__button-checked">Выбрана <span class="addresses__button-remove">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
+                          <path d="M15 15L25 25M25 15L15 25" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span></a>
+
+                      <div class="item-modal" style="display: none;" id="item-modal">
+                        <div class="item-modal__inner">
+                          <h5 class="item-modal__info">
+                            Внимание в данной аптеке отсутствует нужное количество 1 позиции
+                          </h5>
+
+                          <p class="item-modal__text">
+                            После оформления заказа она останется в корзине, какая именно можно увидеть ниже
+                          </p>
+
+                          <a href="" type="submit" class="item-modal__button">Выбрать эту</a>
+                          <a href="" type="submit" class="item-modal__button item-modal__button--outline">Отмена</a>
+                        </div>
+                      </div>
+
+                      <div class="addresses-tooltip">
+                        <p class="addresses-tooltip__unfo">
+                          Внимание в данной аптеке отсутствует 1 позиция
+                        </p>
+                        <p class="addresses-tooltip__text">
+                          После оформления заказа она останется
+                          в корзине, какая именно можно увидеть
+                          ниже
+                        </p>
+                      </div>
+
                     </li>
 
                   </ul>
@@ -806,12 +856,19 @@
                     </li>
 
                     <li class="addresses__item">
-                      <button type="submit" class="addresses__button">Выбрать эту</button>
+                      <a href="" class="addresses__button">Выбрать эту</a>
+                      <a href="" class="addresses__button-checked-mobile">Отменить выбор</a>
+                      <a href="" class="addresses__button-checked">Выбрана <span class="addresses__button-remove">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
+                          <path d="M15 15L25 25M25 15L15 25" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span></a>
                     </li>
 
                   </ul>
 
-                  <ul class="addresses__items">
+                  <ul class="addresses__items addresses__items-missing">
 
                     <li class="addresses__item">
                       <span class="addresses__count">-1</span>
@@ -836,13 +893,49 @@
                       <time class="addresses__time-short">Ежедневно: 09:00-21:00</time>
                     </li>
 
-                    <li class="addresses__item">
-                      <button type="submit" class="addresses__button">Выбрать эту</button>
+                    <li class="addresses__item addresses__item-tooltip">
+                      <a data-fancybox href="#item-modal" class="addresses__button">Выбрать эту</a>
+
+                      <a href="" class="addresses__button-checked-mobile">Отменить выбор</a>
+
+                      <a href="" class="addresses__button-checked">Выбрана <span class="addresses__button-remove">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
+                          <path d="M15 15L25 25M25 15L15 25" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span></a>
+
+                      <div class="item-modal" style="display: none;" id="item-modal">
+                        <div class="item-modal__inner">
+                          <h5 class="item-modal__info">
+                            Внимание в данной аптеке отсутствует нужное количество 1 позиции
+                          </h5>
+
+                          <p class="item-modal__text">
+                            После оформления заказа она останется в корзине, какая именно можно увидеть ниже
+                          </p>
+
+                          <a href="" class="item-modal__button">Выбрать эту</a>
+                          <a href="" class="item-modal__button item-modal__button--outline">Отмена</a>
+                        </div>
+                      </div>
+
+                      <div class="addresses-tooltip">
+                        <p class="addresses-tooltip__unfo">
+                          Внимание в данной аптеке отсутствует 1 позиция
+                        </p>
+                        <p class="addresses-tooltip__text">
+                          После оформления заказа она останется
+                          в корзине, какая именно можно увидеть
+                          ниже
+                        </p>
+                      </div>
+
                     </li>
 
                   </ul>
 
-                  <ul class="addresses__items">
+                  <ul class="addresses__items addresses__items-missing">
 
                     <li class="addresses__item">
                       <span class="addresses__count">-2</span>
@@ -867,8 +960,44 @@
                       <time class="addresses__time-short">Ежедневно: 09:00-21:00</time>
                     </li>
 
-                    <li class="addresses__item">
-                      <button type="submit" class="addresses__button">Выбрать эту</button>
+                    <li class="addresses__item addresses__item-tooltip">
+                      <a data-fancybox href="#item-modal" class="addresses__button">Выбрать эту</a>
+
+                      <a href="" class="addresses__button-checked-mobile">Отменить выбор</a>
+
+                      <a href="" class="addresses__button-checked">Выбрана <span class="addresses__button-remove">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
+                          <path d="M15 15L25 25M25 15L15 25" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span></a>
+
+                      <div class="item-modal" style="display: none;" id="item-modal">
+                        <div class="item-modal__inner">
+                          <h5 class="item-modal__info">
+                            Внимание в данной аптеке отсутствует нужное количество 1 позиции
+                          </h5>
+
+                          <p class="item-modal__text">
+                            После оформления заказа она останется в корзине, какая именно можно увидеть ниже
+                          </p>
+
+                          <a href="" class="item-modal__button">Выбрать эту</a>
+                          <a href="" class="item-modal__button item-modal__button--outline">Отмена</a>
+                        </div>
+                      </div>
+
+                      <div class="addresses-tooltip">
+                        <p class="addresses-tooltip__unfo">
+                          Внимание в данной аптеке отсутствует 1 позиция
+                        </p>
+                        <p class="addresses-tooltip__text">
+                          После оформления заказа она останется
+                          в корзине, какая именно можно увидеть
+                          ниже
+                        </p>
+                      </div>
+
                     </li>
 
                   </ul>
@@ -898,12 +1027,20 @@
                     </li>
 
                     <li class="addresses__item">
-                      <button type="submit" class="addresses__button">Выбрать эту</button>
+                      <a href="" class="addresses__button">Выбрать эту</a>
+                      <a href="" class="addresses__button-checked-mobile">Отменить выбор</a>
+
+                      <a href="" class="addresses__button-checked">Выбрана <span class="addresses__button-remove">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
+                          <path d="M15 15L25 25M25 15L15 25" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span></a>
                     </li>
 
                   </ul>
 
-                  <ul class="addresses__items">
+                  <ul class="addresses__items addresses__items-missing">
 
                     <li class="addresses__item">
                       <span class="addresses__count">-2</span>
@@ -928,8 +1065,44 @@
                       <time class="addresses__time-short">Ежедневно: 09:00-21:00</time>
                     </li>
 
-                    <li class="addresses__item">
-                      <button type="submit" class="addresses__button">Выбрать эту</button>
+                    <li class="addresses__item addresses__item-tooltip">
+                      <a data-fancybox href="#item-modal" class="addresses__button">Выбрать эту</a>
+
+                      <a href="" class="addresses__button-checked-mobile">Отменить выбор</a>
+
+                      <a href="" class="addresses__button-checked">Выбрана <span class="addresses__button-remove">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
+                          <path d="M15 15L25 25M25 15L15 25" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                          
+                      </span></a>
+
+                      <div class="item-modal" style="display: none;" id="item-modal">
+                        <div class="item-modal__inner">
+                          <h5 class="item-modal__info">
+                            Внимание в данной аптеке отсутствует нужное количество 1 позиции
+                          </h5>
+
+                          <p class="item-modal__text">
+                            После оформления заказа она останется в корзине, какая именно можно увидеть ниже
+                          </p>
+
+                          <a href="" class="item-modal__button">Выбрать эту</a>
+                          <a href="" class="item-modal__button item-modal__button--outline">Отмена</a>
+                        </div>
+                      </div>
+
+                      <div class="addresses-tooltip">
+                        <p class="addresses-tooltip__unfo">
+                          Внимание в данной аптеке отсутствует 1 позиция
+                        </p>
+                        <p class="addresses-tooltip__text">
+                          После оформления заказа она останется
+                          в корзине, какая именно можно увидеть
+                          ниже
+                        </p>
+                      </div>
+
                     </li>
 
                   </ul>
@@ -940,6 +1113,20 @@
         </div>
       </div>
     </section>
+
+  <div class="prompt">
+    <div class="container">
+      <div class="prompt__inner">
+        <p class="prompt__info">
+          Обратите внимание! Вы выбрали аптеку в которой отсутствует акционный товар и вы не сможете получить за него подарок!
+        </p>
+
+        <p class="prompt__text">
+          Вы можете выбрать другую аптеку или поучаствовать в акции при следующем заказе.
+        </p>
+      </div>
+    </div>
+  </div>
 
     <section class="goods">
       <div class="container">
@@ -999,6 +1186,45 @@
             </li>
 
             <li class="goods__middle-item">
+              <div class="goods__middle-images"> <a class="goods__middle-link" href="">
+                  <img class="goods__middle-img"
+                    src="https://vn1.ru/upload/resize_cache/iblock/490/160_160_1/lioton-1000-gel-dlya-naruzhnogo-primeneniya-100g_preview_5901.jpg"
+                    alt="Лиотон 1000 гель для наружного применения 100г"
+                    title="Лиотон 1000 гель для наружного применения 100г">
+                </a>
+              </div>
+
+              <div class="goods__middle-info">
+                <a class="goods__middle-name" href="">
+                  <h6 class="goods__middle-title">Лиотон 1000 гель для наружного применения 100г</h6>
+                </a>
+                <div class="goods__middle-term">Годен до: <span class="goods__middle-data"> 01.11.2031</span></div>
+              </div>
+            </li>
+
+            <li class="goods__middle-item">
+              <div class="goods__middle-price">1&nbsp;211&nbsp;₽</div>
+            </li>
+
+            <li class="goods__middle-item">
+              <div class="goods__middle-count">1</div>
+            </li>
+
+            <li class="goods__middle-item">
+              <div class="goods__middle-result">1&nbsp;211&nbsp;₽</div>
+            </li>
+          </ul>
+
+          <ul class="goods__middle-list goods__middle-list--disabled">
+            <!-- когда нет товара доб.класс goods__middle-list--disabled -->
+            <li class="goods__middle-item">
+              <label class="goods__middle-label">
+                <input autocomplete="off" type="checkbox" class="goods__middle-checkbox" checked disabled>
+                <div class="goods__middle-checkmark"></div>
+              </label>
+            </li>
+
+            <li class="goods__middle-item goods__middle-item--gray">
               <div class="goods__middle-images"> <a class="goods__middle-link" href="">
                   <img class="goods__middle-img"
                     src="https://vn1.ru/upload/resize_cache/iblock/490/160_160_1/lioton-1000-gel-dlya-naruzhnogo-primeneniya-100g_preview_5901.jpg"
@@ -1140,11 +1366,63 @@
             </li>
           </ul>
 
+          <ul class="goods__middle-list goods__middle-list--disabled">
+            <li class="goods__middle-item">
+              <label class="goods__middle-label">
+                <input autocomplete="off" type="checkbox" class="goods__middle-checkbox" checked disabled>
+                <div class="goods__middle-checkmark"></div>
+              </label>
+            </li>
+
+            <li class="goods__middle-item goods__middle-item--gray">
+              <div class="goods__middle-images">
+                <a class="goods__middle-link goods__middle-item--free" href="">
+                  <img class="goods__middle-img"
+                    src="https://vn1.ru/upload/resize_cache/iblock/8c2/160_160_1/lignarius-kapsuly-30_preview_5748.jpg"
+                    alt="Лигнариус капсулы №30" title="Лигнариус капсулы №30">
+                </a>
+              </div>
+              <div class="goods__middle-info">
+                <a class="goods__middle-name" href="">
+                  <h6 class="goods__middle-title">Лигнариус капсулы №30</h6>
+                </a>
+                <div class="goods__middle-term">Годен до: <span class="goods__middle-data">01.11.2031</span></div>
+              </div>
+            </li>
+
+            <li class="goods__middle-item">
+              <div class="goods__middle-price">0&nbsp;₽</div>
+            </li>
+
+            <li class="goods__middle-item">
+              <div class="goods__middle-count">1</div>
+            </li>
+
+            <li class="goods__middle-item">
+              <div class="goods__middle-result">0&nbsp;₽</div>
+            </li>
+          </ul>
+
         </div>
 
         <div class="goods__footer"></div>
       </div>
     </section>
+
+    <section class="pay pay--disabled">
+      <!-- когда еще не Выбрана адресс добавь класс  pay--disabled -->
+      <div class="pay__total">
+        <span class="pay__text">Сумма:</span>
+        <span class="pay__result">99&nbsp;990&nbsp;₽</span>
+      </div>
+      <div class="pay__phone">
+        <input required="" type="text" name="text" autocomplete="off" class="pay__phone-input" placeholder="Телефон*">
+        <label class="pay__phone-label">Мобильный телефон</label>
+      </div>
+      <div class="pay__button">
+        <button type="submit" class="pay__btn">Отправить</button>
+      </div>
+    </section>  
 
     <footer>
       <div class="footer-info">
@@ -1195,6 +1473,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=9777b18a-5569-4491-b8f3-06ac13aa8751&lang=ru_RU"></script>
   <script src="local/templates/.default/js/vendor/jquery.min.js"></script>
   <script src="local/templates/.default/js/vendor/slick.min.js"></script>
+  <script src="local/templates/.default/js/vendor/jquery.fancybox.min.js"></script>
   <script src="js/map.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/selected-map-list.js"></script>

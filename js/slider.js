@@ -41,3 +41,32 @@ $('.slide-product__body').slick({
     // instead of a settings object
   ]
 });
+
+if ($(".slider_viewed_need").length>0)
+{
+    $(".slider_viewed_need").slick({
+        infinite: !0,
+        pauseOnDotsHover: !1,
+        dots: !1,
+        autoplay: !0,
+        speed: 1000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        adaptiveHeight: !0,
+        adaptiveWidth: !0,
+        prevArrow: '<div class="arrow prev"><i class="fa fa-chevron" aria-hidden="true"></i></div>',
+        nextArrow: '<div class="arrow next"><i class="fa fa-chevron" aria-hidden="true"></i></div>',
+        responsive: [{
+            breakpoint: 980,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+          {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        }]
+    });
+}

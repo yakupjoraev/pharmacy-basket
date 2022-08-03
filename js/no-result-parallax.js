@@ -67,9 +67,9 @@ window.onload = function () {
 };
 
 window.onload = function () {
-  const parallax = document.querySelector('.images-parallax-two');
+  const parallaxTwo = document.querySelector('.images-parallax-two');
 
-  if (parallax) {
+  if (parallaxTwo) {
     const parallaxBody = document.querySelector('.images-parallax__body')
     const parallaxDoctor = document.querySelector('.images-parallax__doctor')
     const parallaxPillRedTwo = document.querySelector('.images-parallax__pill-red-two')
@@ -114,10 +114,10 @@ window.onload = function () {
     }
     setMauseParallaxStyle();
 
-    parallax.addEventListener('mousemove', function (e) {
+    parallaxTwo.addEventListener('mousemove', function (e) {
       // Получение ширины и высоты блока
-      const parallaxWidth = parallax.offsetWidth;
-      const parallaxHeight = parallax.offsetHeight;
+      const parallaxWidth = parallaxTwo.offsetWidth;
+      const parallaxHeight = parallaxTwo.offsetHeight;
 
       // Ноль по середине 
       const coordX = e.pageX - parallaxWidth / 2;
@@ -128,4 +128,4 @@ window.onload = function () {
       coordYprocent = coordY / parallaxHeight * 100;
     });
   }
-}
+};

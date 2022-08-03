@@ -1,8 +1,8 @@
 window.onload = function () {
-  const parallax = document.querySelector('.images-parallax');
+    const parallax = document.querySelector('.images-parallax');
+    const parallaxTwo = document.querySelector('.images-parallax-two');
 
   if (parallax) {
-    const parallaxBody = document.querySelector('.images-parallax__body')
     const parallaxLoupe = document.querySelector('.images-parallax__loupe')
     const parallaxBasket = document.querySelector('.images-parallax__basket')
     const parallaxCircleOutline = document.querySelector('.images-parallax__circle-outline')
@@ -64,13 +64,8 @@ window.onload = function () {
       coordYprocent = coordY / parallaxHeight * 100;
     });
   }
-};
 
-window.onload = function () {
-  const parallaxTwo = document.querySelector('.images-parallax-two');
-
-  if (parallaxTwo) {
-    const parallaxBody = document.querySelector('.images-parallax__body')
+  else if(parallaxTwo) {
     const parallaxDoctor = document.querySelector('.images-parallax__doctor')
     const parallaxPillRedTwo = document.querySelector('.images-parallax__pill-red-two')
     const parallaxPillRedOne = document.querySelector('.images-parallax__pill-red-one')

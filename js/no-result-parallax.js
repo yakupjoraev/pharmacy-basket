@@ -2,6 +2,7 @@ window.onload = function () {
     const parallax = document.querySelector('.images-parallax');
     const parallaxTwo = document.querySelector('.images-parallax-two');
 
+//для 1
   if (parallax) {
     const parallaxLoupe = document.querySelector('.images-parallax__loupe')
     const parallaxBasket = document.querySelector('.images-parallax__basket')
@@ -65,6 +66,7 @@ window.onload = function () {
     });
   }
 
+//для 2
   else if(parallaxTwo) {
     const parallaxDoctor = document.querySelector('.images-parallax__doctor')
     const parallaxPillRedTwo = document.querySelector('.images-parallax__pill-red-two')

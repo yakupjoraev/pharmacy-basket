@@ -4187,7 +4187,8 @@ footer {margin-top: auto;}
 }
 
 .map-list__middle-search::placeholder {
-  font-family: 'PTSansPro-NarrowLight';
+  font-family: 'PT Sans Pro-Narrow Light';
+  font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   color: #707070;

@@ -1337,7 +1337,7 @@
               </label>
             </li>
 
-            <li class="goods__middle-item goods__middle-item--gray">
+            <li class="goods__middle-item">
               <div class="goods__middle-images">
                 <a class="goods__middle-link goods__middle-item--free" href="">
                   <img class="goods__middle-img"
@@ -1403,24 +1403,27 @@
             </li>
           </ul>
 
+          <!-- класс серый филтр добовляет к товару->фото товара goods__middle-item--gray -->
         </div>
 
         <div class="goods__footer"></div>
       </div>
     </section>
 
-    <section class="pay pay--disabled">
+    <section class="pay">
       <!-- когда еще не Выбрана адресс добавь класс  pay--disabled -->
-      <div class="pay__total">
-        <span class="pay__text">Сумма:</span>
-        <span class="pay__result">99&nbsp;990&nbsp;₽</span>
-      </div>
-      <div class="pay__phone">
-        <input required="" type="text" name="text" autocomplete="off" class="pay__phone-input" placeholder="Телефон*">
-        <label class="pay__phone-label">Мобильный телефон</label>
-      </div>
-      <div class="pay__button">
-        <button type="submit" class="pay__btn">Отправить</button>
+      <div class="container">
+        <div class="pay__total">
+          <span class="pay__text">Сумма:</span>
+          <span class="pay__result">99&nbsp;990&nbsp;₽</span>
+        </div>
+        <div class="pay__phone">
+          <input required="" type="text" name="text" autocomplete="off" class="pay__phone-input" placeholder="Телефон*">
+          <label class="pay__phone-label">Мобильный телефон</label>
+        </div>
+        <div class="pay__button">
+          <button type="submit" class="pay__btn">Отправить</button>
+        </div>
       </div>
     </section>  
 

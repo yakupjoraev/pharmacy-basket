@@ -5169,6 +5169,7 @@ footer {margin-top: auto;}
   position: relative;
   max-width: 620px;
   width: 100%;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 .pay__phone-input {

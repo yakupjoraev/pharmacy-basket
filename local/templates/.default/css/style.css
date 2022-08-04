@@ -4959,16 +4959,20 @@ footer {margin-top: auto;}
 
 @media (max-width: 1024px) {
   .goods__middle-list {
-    grid-template-columns: 2% 72% 10% 15%;
+    grid-template-columns: 2% 68% 10% 15%;
   }
   
   .goods__middle-item:nth-child(3) {
     display: none;
   }
+
+  .goods__middle-item:nth-child(5) {
+    justify-self: end;
+  }
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .goods__middle-list.goods__middle-list--disabled .goods__middle-item--free::before {
     background: none;

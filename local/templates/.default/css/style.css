@@ -437,11 +437,13 @@ header.mobile{background-color:#fff;background-color:#fff;width:100%;height:auto
     width: 200%;
     background-color: #E4E4E4;
   }
+  
   .mobile .bottom::after {
     top: -20px;
   }
+
   .mobile .bottom::before {
-    bottom: -40px;
+    bottom: -37px;
   }
 }
 header.mobile .container{padding:0;display:grid;grid-gap:16px;grid-column-gap:16px;grid-row-gap:16px;grid-template-columns:1fr;grid-template-rows:1fr 1fr}
@@ -639,7 +641,7 @@ header.mobile .top .lk .fa{font-size:24px}
   .mobile .top .mobile-logo-city .city {left: 0;top: 0;background-image: url(../img/map-marker-geo.svg);background-repeat: no-repeat;width: max-content;height: auto;display: flex;background-position:left;}
   .mobile .top .mobile-logo-city .ph_location{width: auto;
   height: auto;}
-    header.mobile{padding:8px;padding-top: 13px;}
+    header.mobile{padding:8px;padding-top: 13px;padding-bottom: 20px;}
     header.mobile .top{align-items: flex-start;justify-items: end;}
     /* header.mobile .top{grid-template-columns:32px 1fr 32px 32px 32px;grid-gap:0;grid-row-gap:0;grid-column-gap:0} */
     header.mobile .top .logo{height:32px;display:flex;align-items:center;justify-content:center;margin-bottom: 5px;}
